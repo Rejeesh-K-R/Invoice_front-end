@@ -759,14 +759,9 @@
 										<!--begin::Tabs-->
 										<ul class="nav nav-line-tabs nav-line-tabs-2x nav-stretch fw-semibold px-9">
 											<li class="nav-item">
-												<a class="nav-link text-white opacity-75 opacity-state-100 pb-4" data-bs-toggle="tab" href="#kt_topbar_notifications_1">Alerts</a>
+												<a class="nav-link text-white opacity-75 opacity-state-100 pb-4 active" data-bs-toggle="tab" href="#kt_topbar_notifications_1">Alerts</a>
 											</li>
-											<li class="nav-item">
-												<a class="nav-link text-white opacity-75 opacity-state-100 pb-4 active" data-bs-toggle="tab" href="#kt_topbar_notifications_2">Greetings</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link text-white opacity-75 opacity-state-100 pb-4" data-bs-toggle="tab" href="#kt_topbar_notifications_3">Logs</a>
-											</li>
+											
 										</ul>
 										<!--end::Tabs-->
 									</div>
@@ -774,7 +769,7 @@
 									<!--begin::Tab content-->
 									<div class="tab-content">
 										<!--begin::Tab panel-->
-										<div class="tab-pane fade" id="kt_topbar_notifications_1" role="tabpanel">
+										<div class="tab-pane fade show active" id="kt_topbar_notifications_1" role="tabpanel">
 											<!--begin::Items-->
 											<div class="scroll-y mh-325px my-5 px-8">
 												<!--begin::Item-->
@@ -998,32 +993,7 @@
 											<!--end::View more-->
 										</div>
 										<!--end::Tab panel-->
-										<!--begin::Tab panel-->
-										<div class="tab-pane fade show active" id="kt_topbar_notifications_2" role="tabpanel">
-											<!--begin::Wrapper-->
-											<div class="d-flex flex-column px-9">
-												<!--begin::Section-->
-												<div class="pt-10 pb-0">
-													<!--begin::Title-->
-													<h3 class="text-dark text-center fw-bold">Get Started</h3>
-													<!--end::Title-->
-													
-													<!--begin::Action-->
-													<div class="text-center mt-5 mb-9">
-														<a href="#" class="btn btn-sm btn-primary px-6">Let's Go</a>
-													</div>
-													<!--end::Action-->
-												</div>
-												<!--end::Section-->
-												<!--begin::Illustration-->
-												<div class="text-center px-4">
-													<img class="mw-100 mh-200px" alt="image" src="assets/media/illustrations/sketchy-1/1.png" />
-												</div>
-												<!--end::Illustration-->
-											</div>
-											<!--end::Wrapper-->
-										</div>
-										<!--end::Tab panel-->
+										
 										<!--begin::Tab panel-->
 										<div class="tab-pane fade" id="kt_topbar_notifications_3" role="tabpanel">
 											<!--begin::Items-->
@@ -1251,96 +1221,6 @@
 								<!--end::Menu-->
 								<!--end::Menu wrapper-->
 							</div>
-							<!--end::Notifications-->
-							<!--begin::Quick links-->
-							<div class="app-navbar-item">
-								<!--begin::Menu- wrapper-->
-								<div class="btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
-									<i class="ki-duotone ki-notification-status fs-1">
-										<span class="path1"></span>
-										<span class="path2"></span>
-										<span class="path3"></span>
-										<span class="path4"></span>
-									</i>
-								</div>
-								<!--begin::Menu-->
-								<div class="menu menu-sub menu-sub-dropdown menu-column w-250px w-lg-325px" data-kt-menu="true">
-									<!--begin::Heading-->
-									<div class="d-flex flex-column flex-center bgi-no-repeat rounded-top px-9 py-10" style="background-image:url('assets/media/misc/menu-header-bg.jpg')">
-										<!--begin::Title-->
-										<h3 class="text-white fw-semibold mb-3">Quick Links</h3>
-										<!--end::Title-->
-										<!--begin::Status-->
-										<span class="badge bg-primary text-inverse-primary py-2 px-3">25 pending tasks</span>
-										<!--end::Status-->
-									</div>
-									<!--end::Heading-->
-									<!--begin:Nav-->
-									<div class="row g-0">
-										<!--begin:Item-->
-										<div class="col-6">
-											<a href="#" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
-												<i class="ki-duotone ki-dollar fs-3x text-primary mb-2">
-													<span class="path1"></span>
-													<span class="path2"></span>
-													<span class="path3"></span>
-												</i>
-												<span class="fs-5 fw-semibold text-gray-800 mb-0">Accounting</span>
-												<span class="fs-7 text-gray-400">eCommerce</span>
-											</a>
-										</div>
-										<!--end:Item-->
-										<!--begin:Item-->
-										<div class="col-6">
-											<a href="#" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-bottom">
-												<i class="ki-duotone ki-sms fs-3x text-primary mb-2">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-												<span class="fs-5 fw-semibold text-gray-800 mb-0">Administration</span>
-												<span class="fs-7 text-gray-400">Console</span>
-											</a>
-										</div>
-										<!--end:Item-->
-										<!--begin:Item-->
-										<div class="col-6">
-											<a href="../dist/apps/projects/list.html" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end">
-												<i class="ki-duotone ki-abstract-41 fs-3x text-primary mb-2">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-												<span class="fs-5 fw-semibold text-gray-800 mb-0">Projects</span>
-												<span class="fs-7 text-gray-400">Pending Tasks</span>
-											</a>
-										</div>
-										<!--end:Item-->
-										<!--begin:Item-->
-										<div class="col-6">
-											<a href="#" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light">
-												<i class="ki-duotone ki-briefcase fs-3x text-primary mb-2">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-												<span class="fs-5 fw-semibold text-gray-800 mb-0">Customers</span>
-												<span class="fs-7 text-gray-400">Latest cases</span>
-											</a>
-										</div>
-										<!--end:Item-->
-									</div>
-									<!--end:Nav-->
-									<!--begin::View more-->
-									<div class="py-2 text-center border-top">
-										<a href="#" class="btn btn-color-gray-600 btn-active-color-primary">View All
-										<i class="ki-duotone ki-arrow-right fs-5">
-											<span class="path1"></span>
-											<span class="path2"></span>
-										</i></a>
-									</div>
-									<!--end::View more-->
-								</div>
-								<!--end::Menu-->
-								<!--end::Menu wrapper-->
-							</div>
 							<!--end::Quick links-->
 							<!--begin::User menu-->
 							<div class="app-navbar-item ms-3 ms-lg-4 me-lg-2" id="kt_header_user_menu_toggle">
@@ -1376,17 +1256,10 @@
 										<a href="../dist/account/overview.html" class="menu-link px-5">My Profile</a>
 									</div>
 									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item px-5">
-										<a href="../dist/apps/projects/list.html" class="menu-link px-5">
-											<span class="menu-text">My Projects</span>
-											<span class="menu-badge">
-												<span class="badge badge-light-danger badge-circle fw-bold fs-7">3</span>
-											</span>
-										</a>
-									</div>
-									<!--end::Menu item-->
 									
+									<!--begin::Menu item-->
+									
+									<!--end::Menu item-->
 									<!--begin::Menu separator-->
 									<div class="separator my-2"></div>
 									<!--end::Menu separator-->
@@ -1468,36 +1341,11 @@
 										<!--end::Menu-->
 									</div>
 									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
-										<a href="#" class="menu-link px-5">
-											<span class="menu-title position-relative">Language
-											<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-											<img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/united-states.svg" alt="" /></span></span>
-										</a>
-										<!--begin::Menu sub-->
-										<div class="menu-sub menu-sub-dropdown w-175px py-4">
-											<!--begin::Menu item-->
-											<div class="menu-item px-3">
-												<a href="../dist/account/settings.html" class="menu-link d-flex px-5 active">
-												<span class="symbol symbol-20px me-4">
-													<img class="rounded-1" src="assets/media/flags/united-states.svg" alt="" />
-												</span>English</a>
-											</div>
-											<!--end::Menu item-->
-											
-										</div>
-										<!--end::Menu sub-->
-									</div>
-									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item px-5 my-1">
-										<a href="../dist/account/settings.html" class="menu-link px-5">Account Settings</a>
-									</div>
-									<!--end::Menu item-->
+									
+									
 									<!--begin::Menu item-->
 									<div class="menu-item px-5">
-										<a href="../dist/authentication/layouts/corporate/sign-in.html" class="menu-link px-5">Sign Out</a>
+										<a href="../dist/authentication/sign-in/basic.html" class="menu-link px-5">Sign Out</a>
 									</div>
 									<!--end::Menu item-->
 								</div>
@@ -1508,7 +1356,7 @@
 							<!--begin::Action-->
 							<div class="app-navbar-item ms-3 ms-lg-4 me-lg-6">
 								<!--begin::Link-->
-								<a href="../dist/authentication/sign-in/basic.html" class="btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px">
+								<a href="account/settings.html" class="btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px">
 									<i class="ki-duotone ki-setting-3 fs-1">
 										<span class="path1"></span>
 										<span class="path2"></span>
@@ -1560,14 +1408,14 @@
 									<!--begin:Menu link-->
 									<span class="menu-link">
 										<span class="menu-icon">
-											<i class="ki-duotone ki-element-11 fs-1">
+											<i class="fa-solid fa-house" style="color: #000;">
 												<span class="path1"></span>
 												<span class="path2"></span>
 												<span class="path3"></span>
 												<span class="path4"></span>
 											</i>
 										</span>
-										<span class="menu-title">New Invoice</span>
+										<span class="menu-title">Invoice</span>
 										<span class="menu-arrow"></span>
 									</span>
 									<!--end:Menu link-->
@@ -1577,10 +1425,10 @@
 										<div class="menu-item">
 											<!--begin:Menu link-->
 											<a class="menu-link" href="../dist/index.html">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-microphone"></i></span>
 												</span>
-												<span class="menu-title">Generate New Invoice</span>
+												<span class="menu-title">New Invoice</span>
 											</a>
 											<!--end:Menu link-->
 										</div>
@@ -1588,9 +1436,9 @@
 										<!--begin:Menu item-->
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link" href="pages/manage_invoice.html" data-kt-page="pro">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+											<a class="menu-link" href="apps/subscriptions/list.html" data-kt-page="pro">
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-book"></i></span>
 												</span>
 												<span class="menu-title">Manage Invoice
 												<!-- <span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
@@ -1602,10 +1450,10 @@
 										<div class="menu-item">
 											<!--begin:Menu link-->
 											<a class="menu-link" href="pages/analystic_and_report.html" data-kt-page="pro">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-magnifying-glass"></i></span>
 												</span>
-												<span class="menu-title">Analystic and Reports
+												<span class="menu-title">Analystic & Reports
 												<!-- <span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
 											</a>
 											<!--end:Menu link-->
@@ -1615,8 +1463,8 @@
 										<div class="menu-item">
 											<!--begin:Menu link-->
 											<a class="menu-link" href="apps/ecommerce/catalog/products.html" data-kt-page="pro">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-parachute-box"></i></span>
 												</span>
 												<span class="menu-title">Products
 												<!--<span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
@@ -1624,38 +1472,59 @@
 											<!--end:Menu link-->
 										</div>
 										<!--end:Menu item-->
-										
+
+
+										<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+											<span class="menu-link">
+												<span class="menu-icon">
+													<i class="fa-solid fa-cart-shopping" style="color: #000;">
+														<span class="path1"></span>
+														<span class="path2"></span>
+													</i>
+												</span>
+												<span class="menu-title">Purchase & Sales</span>
+												<span class="menu-arrow"></span>
+											</span>
+
+										<!--begin:Menu item-->
+										<div class="menu-sub menu-sub-accordion">
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link" href="account/overview.html" data-kt-page="pro">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+											<a class="menu-link" href="apps/ecommerce/catalog/purchase.html" data-kt-page="pro">
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-cart-shopping"></i></span>
 												</span>
-												<span class="menu-title">Profile
+												<span class="menu-title">Purchase
 												<!--<span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
 											</a>
 											<!--end:Menu link-->
 										</div>
 										<!--end:Menu item-->
 
+										<!--begin:Menu item-->
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link active" href="account/settings.html" data-kt-page="pro">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+											<a class="menu-link" href="apps/ecommerce/catalog/sales.html" data-kt-page="pro">
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-truck"></i></span>
 												</span>
-												<span class="menu-title">Profile Settings
+												<span class="menu-title">Sales
 												<!--<span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
 											</a>
 											<!--end:Menu link-->
 										</div>
+										</div>
+										</div>
 										<!--end:Menu item-->
+									
+
+										
 
 										<!--begin:Menu link-->
 										<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
 											<span class="menu-link">
 												<span class="menu-icon">
-													<i class="ki-duotone ki-element-11 fs-1">
+													<i class="fa-solid fa-person-rays"  style="color: #000;">
 														<span class="path1"></span>
 														<span class="path2"></span>
 													</i>
@@ -1669,8 +1538,8 @@
 												<div class="menu-item">
 													<!--begin:Menu link-->
 													<a class="menu-link" href="apps/customers/suppliers.html" data-kt-page="pro">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
+														<span class="menu-icon">
+															<span><i class="fa-solid fa-truck"></i></span>
 														</span>
 														<span class="menu-title">Suppliers
 														<!--<span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span> 
@@ -1682,8 +1551,8 @@
 												<div class="menu-item">
 													<!--begin:Menu link-->
 													<a class="menu-link" href="apps/customers/list.html" data-kt-page="pro">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
+														<span class="menu-icon">
+															<span><i class="fa-solid fa-cart-shopping"></i></span>
 														</span>
 														<span class="menu-title">Customers
 														<!--<span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span> 
@@ -1705,17 +1574,10 @@
 							<!--end::Sidebar menu-->
 							<!--begin::Footer-->
 							<div class="app-sidebar-project-default app-sidebar-project-minimize text-center min-h-lg-400px flex-column-auto d-flex flex-column justify-content-end" id="kt_app_sidebar_footer">
-								<!--begin::Title-->
-								<h2 class="fw-bold text-gray-800">Welcome to SalesSuite</h2>
-								<!--end::Title-->
-								<!--begin::Description-->
-								<div class="fw-semibold text-gray-700 fs-7 lh-2 px-7 mb-1">Join the movement make a difference.</div>
-								<!--end::Description-->
-								<!--begin::Illustration-->
-								<img class="mx-auto h-150px h-lg-175px mb-4" src="assets/media/misc/saul-welcome.png" alt="" />
+								
 								<!--end::Illustration-->
 								<div class="text-center mb-lg-5 pb-lg-3">
-									<a href="#" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#kt_modal_create_account">Get Started</a>
+									<a href="#" class="btn btn-sm btn-dark" data-bs-toggle="modal">Support</a>
 								</div>
 							</div>
 							<!--end::Footer-->
@@ -1736,39 +1598,7 @@
 										<!--begin::Page title-->
 										<div class="page-title d-flex flex-column gap-1 me-3 mb-2">
 											<!--begin::Breadcrumb-->
-											<ul class="breadcrumb breadcrumb-separatorless fw-semibold mb-6">
-												<!--begin::Item-->
-												<li class="breadcrumb-item text-gray-700 fw-bold lh-1">
-													<a href="../dist/index.html" class="text-gray-500">
-														<i class="ki-duotone ki-home fs-3 text-gray-400 me-n1"></i>
-													</a>
-												</li>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<li class="breadcrumb-item">
-													<i class="ki-duotone ki-right fs-4 text-gray-700 mx-n1"></i>
-												</li>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<li class="breadcrumb-item text-gray-700 fw-bold lh-1">Pages</li>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<li class="breadcrumb-item">
-													<i class="ki-duotone ki-right fs-4 text-gray-700 mx-n1"></i>
-												</li>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<li class="breadcrumb-item text-gray-700 fw-bold lh-1">Account</li>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<li class="breadcrumb-item">
-													<i class="ki-duotone ki-right fs-4 text-gray-700 mx-n1"></i>
-												</li>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<li class="breadcrumb-item text-gray-700">Settings</li>
-												<!--end::Item-->
-											</ul>
+											
 											<!--end::Breadcrumb-->
 											<!--begin::Title-->
 											<h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">Account Settings</h1>
@@ -1776,7 +1606,6 @@
 										</div>
 										<!--end::Page title-->
 										<!--begin::Actions-->
-										<a href="#" class="btn btn-sm btn-success ms-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">Create Project</a>
 										<!--end::Actions-->
 									</div>
 									<!--end::Toolbar wrapper-->
@@ -1842,20 +1671,7 @@
 														</div>
 														<!--end::User-->
 														<!--begin::Actions-->
-														<div class="d-flex my-4">
-															<a href="#" class="btn btn-sm btn-light me-2" id="kt_user_follow_button">
-																<i class="ki-duotone ki-check fs-2 d-none"></i>
-																<!--begin::Indicator label-->
-																<span class="indicator-label">Follow</span>
-																<!--end::Indicator label-->
-																<!--begin::Indicator progress-->
-																<span class="indicator-progress">Please wait...
-																<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-																<!--end::Indicator progress-->
-															</a>
-															<a href="#" class="btn btn-sm btn-primary me-2" data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal">Hire Me</a>
-															
-														</div>
+														
 														<!--end::Actions-->
 													</div>
 													<!--end::Title-->
@@ -1885,15 +1701,15 @@
 																<div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
 																	<!--begin::Number-->
 																	<div class="d-flex align-items-center">
-																		<i class="ki-duotone ki-arrow-down fs-2 text-danger me-2">
+																		<i class="ki-duotone ki-arrow-up fs-2 text-success me-2">
 																			<span class="path1"></span>
 																			<span class="path2"></span>
 																		</i>
-																		<div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="75">0</div>
+																		<div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="750">0</div>
 																	</div>
 																	<!--end::Number-->
 																	<!--begin::Label-->
-																	<div class="fw-semibold fs-6 text-gray-400">Projects</div>
+																	<div class="fw-semibold fs-6 text-gray-400">Purchase</div>
 																	<!--end::Label-->
 																</div>
 																<!--end::Stat-->
@@ -1905,11 +1721,11 @@
 																			<span class="path1"></span>
 																			<span class="path2"></span>
 																		</i>
-																		<div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="60" data-kt-countup-prefix="%">0</div>
+																		<div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="600">0</div>
 																	</div>
 																	<!--end::Number-->
 																	<!--begin::Label-->
-																	<div class="fw-semibold fs-6 text-gray-400">Success Rate</div>
+																	<div class="fw-semibold fs-6 text-gray-400">Sale</div>
 																	<!--end::Label-->
 																</div>
 																<!--end::Stat-->
@@ -3207,9 +3023,7 @@
 							<!--end::Copyright-->
 							<!--begin::Menu-->
 							<ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-								<li class="menu-item">
-									<a href="#" target="_blank" class="menu-link px-2">About</a>
-								</li>
+								
 								<li class="menu-item">
 									<a href="https://cognetz.com" target="_blank" class="menu-link px-2">Support</a>
 								</li>
@@ -3221,28 +3035,7 @@
 					</div>
 					<!--end:::Main-->
 					<!--begin::aside-->
-					<div id="kt_app_aside" class="app-aside flex-column" data-kt-drawer="true" data-kt-drawer-name="app-aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="auto" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_app_aside_mobile_toggle">
-						<!--begin::Wrapper-->
-						<div id="kt_app_aside_wrapper" class="d-flex flex-column align-items-center hover-scroll-y py-5 py-lg-0 gap-4" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_header" data-kt-scroll-wrappers="#kt_app_aside_wrapper" data-kt-scroll-offset="5px">
-							
-							<a href="../dist/account/overview.html" class="btn btn-icon btn-color-warning bg-hover-body h-45px w-45px flex-shrink-0 mb-4" data-bs-toggle="tooltip" title="Profile" data-bs-custom-class="tooltip-inverse">
-								<i class="ki-duotone ki-message-add fs-2qx">
-									<span class="path1"></span>
-									<span class="path2"></span>
-									<span class="path3"></span>
-								</i>
-							</a>
-							<a href="../dist/apps/ecommerce/catalog/products.html" class="btn btn-icon btn-color-info bg-hover-body h-45px w-45px flex-shrink-0 mb-4" data-bs-toggle="tooltip" title="Products" data-bs-custom-class="tooltip-inverse">
-								<i class="ki-duotone ki-devices-2 fs-2qx">
-									<span class="path1"></span>
-									<span class="path2"></span>
-									<span class="path3"></span>
-								</i>
-							</a>
-						</div>
-						<!--end::Wrapper-->
-					</div>
-					<!--end::aside-->
+					
 				</div>
 				<!--end::Wrapper-->
 			</div>

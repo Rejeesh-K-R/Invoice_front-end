@@ -762,14 +762,9 @@
 										<!--begin::Tabs-->
 										<ul class="nav nav-line-tabs nav-line-tabs-2x nav-stretch fw-semibold px-9">
 											<li class="nav-item">
-												<a class="nav-link text-white opacity-75 opacity-state-100 pb-4" data-bs-toggle="tab" href="#kt_topbar_notifications_1">Alerts</a>
+												<a class="nav-link text-white opacity-75 opacity-state-100 pb-4 active" data-bs-toggle="tab" href="#kt_topbar_notifications_1">Alerts</a>
 											</li>
-											<li class="nav-item">
-												<a class="nav-link text-white opacity-75 opacity-state-100 pb-4 active" data-bs-toggle="tab" href="#kt_topbar_notifications_2">Greetings</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link text-white opacity-75 opacity-state-100 pb-4" data-bs-toggle="tab" href="#kt_topbar_notifications_3">Logs</a>
-											</li>
+											
 										</ul>
 										<!--end::Tabs-->
 									</div>
@@ -777,7 +772,7 @@
 									<!--begin::Tab content-->
 									<div class="tab-content">
 										<!--begin::Tab panel-->
-										<div class="tab-pane fade" id="kt_topbar_notifications_1" role="tabpanel">
+										<div class="tab-pane fade show active" id="kt_topbar_notifications_1" role="tabpanel">
 											<!--begin::Items-->
 											<div class="scroll-y mh-325px my-5 px-8">
 												<!--begin::Item-->
@@ -1001,32 +996,7 @@
 											<!--end::View more-->
 										</div>
 										<!--end::Tab panel-->
-										<!--begin::Tab panel-->
-										<div class="tab-pane fade show active" id="kt_topbar_notifications_2" role="tabpanel">
-											<!--begin::Wrapper-->
-											<div class="d-flex flex-column px-9">
-												<!--begin::Section-->
-												<div class="pt-10 pb-0">
-													<!--begin::Title-->
-													<h3 class="text-dark text-center fw-bold">Greetings</h3>
-													<!--end::Title-->
-													
-													<!--begin::Action-->
-													<div class="text-center mt-5 mb-9">
-														<a href="#" class="btn btn-sm btn-primary px-6">Let's Go</a>
-													</div>
-													<!--end::Action-->
-												</div>
-												<!--end::Section-->
-												<!--begin::Illustration-->
-												<div class="text-center px-4">
-													<img class="mw-100 mh-200px" alt="image" src="assets/media/illustrations/sketchy-1/1.png" />
-												</div>
-												<!--end::Illustration-->
-											</div>
-											<!--end::Wrapper-->
-										</div>
-										<!--end::Tab panel-->
+										
 										<!--begin::Tab panel-->
 										<div class="tab-pane fade" id="kt_topbar_notifications_3" role="tabpanel">
 											<!--begin::Items-->
@@ -1255,96 +1225,7 @@
 								<!--end::Menu wrapper-->
 							</div>
 							<!--end::Notifications-->
-							<!--begin::Quick links-->
-							<div class="app-navbar-item">
-								<!--begin::Menu- wrapper-->
-								<div class="btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
-									<i class="ki-duotone ki-notification-status fs-1">
-										<span class="path1"></span>
-										<span class="path2"></span>
-										<span class="path3"></span>
-										<span class="path4"></span>
-									</i>
-								</div>
-								<!--begin::Menu-->
-								<div class="menu menu-sub menu-sub-dropdown menu-column w-250px w-lg-325px" data-kt-menu="true">
-									<!--begin::Heading-->
-									<div class="d-flex flex-column flex-center bgi-no-repeat rounded-top px-9 py-10" style="background-image:url('assets/media/misc/menu-header-bg.jpg')">
-										<!--begin::Title-->
-										<h3 class="text-white fw-semibold mb-3">Quick Links</h3>
-										<!--end::Title-->
-										<!--begin::Status-->
-										<span class="badge bg-primary text-inverse-primary py-2 px-3">25 pending tasks</span>
-										<!--end::Status-->
-									</div>
-									<!--end::Heading-->
-									<!--begin:Nav-->
-									<div class="row g-0">
-										<!--begin:Item-->
-										<div class="col-6">
-											<a href="#" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
-												<i class="ki-duotone ki-dollar fs-3x text-primary mb-2">
-													<span class="path1"></span>
-													<span class="path2"></span>
-													<span class="path3"></span>
-												</i>
-												<span class="fs-5 fw-semibold text-gray-800 mb-0">Accounting</span>
-												<span class="fs-7 text-gray-400">eCommerce</span>
-											</a>
-										</div>
-										<!--end:Item-->
-										<!--begin:Item-->
-										<div class="col-6">
-											<a href="#" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-bottom">
-												<i class="ki-duotone ki-sms fs-3x text-primary mb-2">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-												<span class="fs-5 fw-semibold text-gray-800 mb-0">Administration</span>
-												<span class="fs-7 text-gray-400">Console</span>
-											</a>
-										</div>
-										<!--end:Item-->
-										<!--begin:Item-->
-										<div class="col-6">
-											<a href="../dist/apps/projects/list.html" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end">
-												<i class="ki-duotone ki-abstract-41 fs-3x text-primary mb-2">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-												<span class="fs-5 fw-semibold text-gray-800 mb-0">Projects</span>
-												<span class="fs-7 text-gray-400">Pending Tasks</span>
-											</a>
-										</div>
-										<!--end:Item-->
-										<!--begin:Item-->
-										<div class="col-6">
-											<a href="#" class="d-flex flex-column flex-center h-100 p-6 bg-hover-light">
-												<i class="ki-duotone ki-briefcase fs-3x text-primary mb-2">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-												<span class="fs-5 fw-semibold text-gray-800 mb-0">Customers</span>
-												<span class="fs-7 text-gray-400">Latest cases</span>
-											</a>
-										</div>
-										<!--end:Item-->
-									</div>
-									<!--end:Nav-->
-									<!--begin::View more-->
-									<div class="py-2 text-center border-top">
-										<a href="#" class="btn btn-color-gray-600 btn-active-color-primary">View All
-										<i class="ki-duotone ki-arrow-right fs-5">
-											<span class="path1"></span>
-											<span class="path2"></span>
-										</i></a>
-									</div>
-									<!--end::View more-->
-								</div>
-								<!--end::Menu-->
-								<!--end::Menu wrapper-->
-							</div>
-							<!--end::Quick links-->
+							
 							<!--begin::User menu-->
 							<div class="app-navbar-item ms-3 ms-lg-4 me-lg-2" id="kt_header_user_menu_toggle">
 								<!--begin::Menu wrapper-->
@@ -1379,16 +1260,7 @@
 										<a href="../dist/account/overview.html" class="menu-link px-5">My Profile</a>
 									</div>
 									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item px-5">
-										<a href="../dist/apps/projects/list.html" class="menu-link px-5">
-											<span class="menu-text">My Projects</span>
-											<span class="menu-badge">
-												<span class="badge badge-light-danger badge-circle fw-bold fs-7">3</span>
-											</span>
-										</a>
-									</div>
-									<!--end::Menu item-->
+									
 									<!--begin::Menu item-->
 									
 									<!--end::Menu item-->
@@ -1473,41 +1345,8 @@
 										<!--end::Menu-->
 									</div>
 									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
-										<a href="#" class="menu-link px-5">
-											<span class="menu-title position-relative">Language
-											<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-											<img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/united-states.svg" alt="" /></span></span>
-										</a>
-										<!--begin::Menu sub-->
-										<div class="menu-sub menu-sub-dropdown w-175px py-4">
-											<!--begin::Menu item-->
-											<div class="menu-item px-3">
-												<a href="../dist/account/settings.html" class="menu-link d-flex px-5 active">
-												<span class="symbol symbol-20px me-4">
-													<img class="rounded-1" src="assets/media/flags/united-states.svg" alt="" />
-												</span>English</a>
-											</div>
-											<!--end::Menu item-->
-											<!--begin::Menu item-->
-											<div class="menu-item px-3">
-												<a href="../dist/account/settings.html" class="menu-link d-flex px-5">
-												<span class="symbol symbol-20px me-4">
-													<img class="rounded-1" src="assets/media/flags/spain.svg" alt="" />
-												</span>Spanish</a>
-											</div>
-											<!--end::Menu item-->
-											
-										</div>
-										<!--end::Menu sub-->
-									</div>
-									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item px-5 my-1">
-										<a href="../dist/account/settings.html" class="menu-link px-5">Account Settings</a>
-									</div>
-									<!--end::Menu item-->
+									
+									
 									<!--begin::Menu item-->
 									<div class="menu-item px-5">
 										<a href="../dist/authentication/sign-in/basic.html" class="menu-link px-5">Sign Out</a>
@@ -1521,7 +1360,7 @@
 							<!--begin::Action-->
 							<div class="app-navbar-item ms-3 ms-lg-4 me-lg-6">
 								<!--begin::Link-->
-								<a href="../dist/authentication/sign-in/basic.html" class="btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px">
+								<a href="account/settings.html" class="btn btn-icon btn-custom btn-color-gray-600 btn-active-color-primary w-35px h-35px w-md-40px h-md-40px">
 									<i class="ki-duotone ki-setting-3 fs-1">
 										<span class="path1"></span>
 										<span class="path2"></span>
@@ -1573,14 +1412,14 @@
 									<!--begin:Menu link-->
 									<span class="menu-link">
 										<span class="menu-icon">
-											<i class="ki-duotone ki-element-11 fs-1">
+											<i class="fa-solid fa-house" style="color: #000;">
 												<span class="path1"></span>
 												<span class="path2"></span>
 												<span class="path3"></span>
 												<span class="path4"></span>
 											</i>
 										</span>
-										<span class="menu-title">New Invoice</span>
+										<span class="menu-title">Invoice</span>
 										<span class="menu-arrow"></span>
 									</span>
 									<!--end:Menu link-->
@@ -1590,10 +1429,10 @@
 										<div class="menu-item">
 											<!--begin:Menu link-->
 											<a class="menu-link active" href="../dist/index.html">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-microphone"></i></span>
 												</span>
-												<span class="menu-title">Generate New Invoice</span>
+												<span class="menu-title">New Invoice</span>
 											</a>
 											<!--end:Menu link-->
 										</div>
@@ -1601,9 +1440,9 @@
 										<!--begin:Menu item-->
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link" href="pages/manage_invoice.html" data-kt-page="pro">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+											<a class="menu-link" href="apps/subscriptions/list.html" data-kt-page="pro">
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-book"></i></span>
 												</span>
 												<span class="menu-title">Manage Invoice
 												<!-- <span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
@@ -1615,10 +1454,10 @@
 										<div class="menu-item">
 											<!--begin:Menu link-->
 											<a class="menu-link" href="pages/analystic_and_report.html" data-kt-page="pro">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-magnifying-glass"></i></span>
 												</span>
-												<span class="menu-title">Analystic and Reports
+												<span class="menu-title">Analystic & Reports
 												<!-- <span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
 											</a>
 											<!--end:Menu link-->
@@ -1628,8 +1467,8 @@
 										<div class="menu-item">
 											<!--begin:Menu link-->
 											<a class="menu-link" href="apps/ecommerce/catalog/products.html" data-kt-page="pro">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-parachute-box"></i></span>
 												</span>
 												<span class="menu-title">Products
 												<!--<span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
@@ -1638,40 +1477,58 @@
 										</div>
 										<!--end:Menu item-->
 
+
+										<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+											<span class="menu-link">
+												<span class="menu-icon">
+													<i class="fa-solid fa-cart-shopping" style="color: #000;">
+														<span class="path1"></span>
+														<span class="path2"></span>
+													</i>
+												</span>
+												<span class="menu-title">Purchase & Sales</span>
+												<span class="menu-arrow"></span>
+											</span>
+
 										<!--begin:Menu item-->
+										<div class="menu-sub menu-sub-accordion">
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link" href="account/overview.html" data-kt-page="pro">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+											<a class="menu-link" href="apps/ecommerce/catalog/purchase.html" data-kt-page="pro">
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-cart-shopping"></i></span>
 												</span>
-												<span class="menu-title">Profile
+												<span class="menu-title">Purchase
 												<!--<span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
 											</a>
 											<!--end:Menu link-->
 										</div>
 										<!--end:Menu item-->
 
-
 										<!--begin:Menu item-->
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link" href="account/settings.html" data-kt-page="pro">
-												<span class="menu-bullet">
-													<span class="bullet bullet-dot"></span>
+											<a class="menu-link" href="apps/ecommerce/catalog/sales.html" data-kt-page="pro">
+												<span class="menu-icon">
+													<span><i class="fa-solid fa-truck"></i></span>
 												</span>
-												<span class="menu-title">Profile Settings
+												<span class="menu-title">Sales
 												<!--<span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
 											</a>
 											<!--end:Menu link-->
 										</div>
+										</div>
+										</div>
 										<!--end:Menu item-->
+									
+
+										
 
 										<!--begin:Menu link-->
 										<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
 											<span class="menu-link">
 												<span class="menu-icon">
-													<i class="ki-duotone ki-element-11 fs-1">
+													<i class="fa-solid fa-person-rays"  style="color: #000;">
 														<span class="path1"></span>
 														<span class="path2"></span>
 													</i>
@@ -1685,8 +1542,8 @@
 												<div class="menu-item">
 													<!--begin:Menu link-->
 													<a class="menu-link" href="apps/customers/suppliers.html" data-kt-page="pro">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
+														<span class="menu-icon">
+															<span><i class="fa-solid fa-truck"></i></span>
 														</span>
 														<span class="menu-title">Suppliers
 														<!--<span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span> 
@@ -1698,8 +1555,8 @@
 												<div class="menu-item">
 													<!--begin:Menu link-->
 													<a class="menu-link" href="apps/customers/list.html" data-kt-page="pro">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
+														<span class="menu-icon">
+															<span><i class="fa-solid fa-cart-shopping"></i></span>
 														</span>
 														<span class="menu-title">Customers
 														<!--<span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span> 
@@ -1721,17 +1578,9 @@
 							<!--end::Sidebar menu-->
 							<!--begin::Footer-->
 							<div class="app-sidebar-project-default app-sidebar-project-minimize text-center min-h-lg-400px flex-column-auto d-flex flex-column justify-content-end" id="kt_app_sidebar_footer">
-								<!--begin::Title-->
-								<h2 class="fw-bold text-gray-800">Welcome to SalesSuite</h2>
-								<!--end::Title-->
-								<!--begin::Description-->
-								<div class="fw-semibold text-gray-700 fs-7 lh-2 px-7 mb-1">Join the movement make a difference.</div>
-								<!--end::Description-->
-								<!--begin::Illustration-->
-								<img class="mx-auto h-150px h-lg-175px mb-4" src="assets/media/misc/saul-welcome.png" alt="" />
-								<!--end::Illustration-->
+								
 								<div class="text-center mb-lg-5 pb-lg-3">
-									<a href="#" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#kt_modal_create_account">Get Started</a>
+									<a href="#" class="btn btn-sm btn-dark">Support</a>
 								</div>
 							</div>
 							<!--end::Footer-->
@@ -1750,42 +1599,23 @@
 									<!--begin::Toolbar wrapper-->
 									<div class="app-toolbar-wrapper d-flex flex-stack flex-wrap gap-4 w-100">
 										<!--begin::Page title-->
-										<div class="page-title d-flex flex-column gap-1 me-3 mb-2">
-											<!--begin::Breadcrumb-->
-											<ul class="breadcrumb breadcrumb-separatorless fw-semibold mb-6">
-												<!--begin::Item-->
-												<li class="breadcrumb-item text-gray-700 fw-bold lh-1">
-													<a href="../dist/index.html" class="text-gray-500">
-														<i class="ki-duotone ki-home fs-3 text-gray-400 me-n1"></i>
-													</a>
-												</li>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<li class="breadcrumb-item">
-													<i class="ki-duotone ki-right fs-4 text-gray-700 mx-n1"></i>
-												</li>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<li class="breadcrumb-item text-gray-700 fw-bold lh-1">Invoice</li>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<li class="breadcrumb-item">
-													<i class="ki-duotone ki-right fs-4 text-gray-700 mx-n1"></i>
-												</li>
-												<!--end::Item-->
-												<!--begin::Item-->Invoice Generator</li>
-												<!--end::Item-->
-											</ul>
-											<!--end::Breadcrumb-->
-											<!--begin::Title-->
-											<h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">Invoice Generator</h1>
-											<!--end::Title-->
+										<!--Upload Image-->
+										<div class="page-title d-flex flex-column gap-1 me-3 mb-2" style="position: relative; width: fit-content;">
+											<!-- Image -->
 											<img src="assets/media/misc/bg-2.jpg" style="width: 150px; padding: 10px; border-radius: 18px;" alt="Invoice upload image">
-											<button class="btn-success" style="border-radius: 10px; padding: 10px;">Upload Image</button>
+										
+											<!-- + Icon -->
+											<button class="btn-plus" style="position: absolute; bottom: 10px; right: 10px; background-color: #28a745; border: none; border-radius: 15%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 24px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); cursor: pointer; transition: background-color 0.3s, transform 0.3s;">
+												+
+											</button>
+										
+											<!-- Hidden Input for File Upload -->
+											<input type="file" id="uploadImage" style="display: none;" />
 										</div>
 										<!--end::Page title-->
 										<!--begin::Actions-->
-										<a href="#" class="btn btn-sm btn-success ms-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">Create Invoice Generator</a>
+										<h5  class="fw-semibold fs-6" style="position: relative; right: -500px; top: -30px;">Invoice Number</h5><br>
+										<input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" style="width: 20%;" placeholder="#00228383" value="#00228383">
 										<!--end::Actions-->
 									</div>
 									<!--end::Toolbar wrapper-->
@@ -1799,330 +1629,215 @@
 
 <!--Editing start's Here-->
 
-							<!--begin::Content-->
 							<div id="kt_app_content" class="app-content flex-column-fluid">
 								<!--begin::Content container-->
 								<div id="kt_app_content_container" class="app-container container-fluid">
-									<!--begin::Row-->
-									<div class="row gx-5 gx-xl-10">
-										<!--begin::Col-->
-										<div class="col-xxl-6 mb-5 mb-xl-10">
-											<!--begin::Chart widget 8-->
-											<div class="card card-flush h-xl-100">
-												<!--begin::Header-->
-												<div class="card-header pt-5">
-													<!--begin::Title-->
-													<ul class="nav nav-pills nav-pills-custom mb-3" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-														<!--begin::Item-->
-														<h3 class="card-title align-items-start flex-column" style="font-family: Arial, sans-serif; color: #333;">
-															<span class="fs-3x fw-bold" style="font-size: 24px; color: #2c3e50; padding: 10px 0; text-transform: uppercase; letter-spacing: 2px;">Who is this Invoice To</span> <br><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Name: </span>
-															<input type="text" placeholder="e.g., Visal Madhu" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Business Name: </span>
-															<input type="text" placeholder="e.g., Product Shipping" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Address: </span>
-															<input type="text" placeholder="e.g., 123 street, place name, City, State, Country" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Email: </span>
-															<input type="text" placeholder="e.g., example@example.com" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Phone Number: </span>
-															<input type="text" placeholder="e.g., 1234567890" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">GST Number: </span>
-															<input type="text" placeholder="e.g., 555x555x555x555" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Other Details: </span>
-															<input type="text" placeholder="e.g., Item specifications" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Date: </span>
-															<input type="date" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Payment Terms: </span>
-															<input type="text" placeholder="e.g., Payment Terms" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br><br>
-														</h3>
-													</ul>
+									<!--begin::Products-->
+									<div class="card card-flush">
+										<!--begin::Card header-->
+										
+
+
+
+
+
+
+
+
+
+
+										
+										
+
+
+
+										<!--begin::Content-->
+										<div id="kt_account_settings_profile_details" class="collapse show">
+											<!--begin::Form-->
+											<form id="kt_account_profile_details_form" class="form">
+												<!--begin::Card body-->
+												<div class="card-body border-top p-9">
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">Who is this Invoice From</h1>
+														<!--end::Label-->
 														
-														
-													<!--end::Title-->
-													<!--begin::Toolbar-->
-													<!-- <div class="card-toolbar">
-														<ul class="nav" id="kt_chart_widget_8_tabs">
-															<li class="nav-item">
-																<a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1" data-bs-toggle="tab" id="kt_chart_widget_8_week_toggle" href="#kt_chart_widget_8_week_tab">Month</a>
-															</li>
-															<li class="nav-item">
-																<a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1 active" data-bs-toggle="tab" id="kt_chart_widget_8_month_toggle" href="#kt_chart_widget_8_month_tab">Week</a>
-															</li>
-														</ul>
-													</div> -->
-													<!--end::Toolbar-->
-												</div>
-												<!--end::Header-->
-												<!--begin::Body-->
-												<div class="card-body pt-6">
-													<!--begin::Tab content-->
-													<div class="tab-content">
-														<!--begin::Tab pane-->
-														
-														<!--end::Tab pane-->
-														<!--begin::Tab pane-->
-														
-														<!--end::Tab pane-->
 													</div>
-													<!--end::Tab content-->
-												</div>
-												<!--end::Body-->
-											</div>
-											<!--end::Chart widget 8-->
-										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-xl-6 mb-5 mb-xl-10">
-											<!--begin::Tables widget 16-->
-											<div class="card card-flush h-xl-100">
-												
-												<!--end::Header-->
-												<!--begin::Body-->
-												<div class="card-body pt-6">
-													<!--begin::Nav-->
-													<ul class="nav nav-pills nav-pills-custom mb-3" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-														<!--begin::Item-->
-														<h3 class="card-title align-items-start flex-column" style="font-family: Arial, sans-serif; color: #333;">
-															<span class="fs-3x fw-bold" style="font-size: 24px; color: #2c3e50; padding: 10px 0; text-transform: uppercase; letter-spacing: 2px;">Who is this Invoice To</span> <br><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Name: </span><br>
-															<input type="text" placeholder="e.g., Visal Madhu" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Business Name: </span><br>
-															<input type="text" placeholder="e.g., Product Shipping" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Address: </span><br>
-															<input type="text" placeholder="e.g., 123 street, place name, City, State, Country" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Email: </span><br>
-															<input type="text" placeholder="e.g., example@example.com" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Phone Number: </span><br>
-															<input type="text" placeholder="e.g., 1234567890" style="width: 85%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px;"><br><br>
-													
-															<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">GST Number:</span><br>
-																<input type="text" placeholder="e.g., 555x555x555x555" style="width: 85%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;"><br><br>
-															
-																<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;"><a href="#" style="color: #2980b9;">Or select existing customer</a></span><br><br>
-															
-																<div id="kt_header_search" class="header-search d-flex align-items-center" style="width: 85%; position: relative; margin-bottom: 20px;">
-																	<i class="ki-duotone ki-magnifier search-icon fs-2 text-gray-500 position-absolute" style="top: 12px; left: 10px;"></i>
-																	<input type="text" class="search-input form-control" placeholder="Or select existing customer..." style="width: 100%; padding: 10px 40px; border: 1px solid #ccc; border-radius: 5px;">
-																	<span class="spinner-border h-15px w-15px align-middle text-gray-400" style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%);"></span>
-																</div>
-																
-																<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Date:</span><br>
-																<input type="date" style="width: 85%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;">
-																<br><br>
-															
-																<span class="card-label fw-bold" style="color: #34495e; font-size: 18px;">Payment Terms:</span><br>
-																<input type="text" placeholder="e.g., Payment Terms" style="width: 85%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;"><br><br>
-															
-																
-													</ul>
-												</div>
-											</div>
-										</div>
-										<div style="margin: 20px auto; width: 90%; border: 1px solid #ddd; border-radius: 8px; padding: 15px; background-color: #f9f9f9; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-											<table class="table table-hover" style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; color: #333;">
-												<thead>
-													<tr style="background-color: #2c3e50; color: #fff; text-align: center;">
-														<th scope="col" style="padding: 12px; font-size: 18px;">Services</th>
-														<th scope="col" style="padding: 12px; font-size: 18px;">Quantity</th>
-														<th scope="col" style="padding: 12px; font-size: 18px;">Price</th>
-														<th scope="col" style="padding: 12px; font-size: 18px;">Subtotal</th>
-														<th scope="col" style="padding: 12px; font-size: 18px;">Action</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr style="text-align: center; background-color: #f1f1f1;">
-														<td><input type="text" placeholder="Enter the product name or description" style="width: 123%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-														</td>
-														
-														<td><input type="number" placeholder="Quantity" style="width: 65%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></td>
-														<td><input type="text" placeholder="Price" style="width: 80%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></td>
-														<td><input type="text" placeholder="Subtotal" style="width: 80%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></td>
-														<td><button class="btn btn-danger" style="padding: 6px 12px; border-radius: 4px; background-color: #e74c3c; color: #fff; border: none;">Remove</button></td>
-													</tr>
-													
-												</tbody>
-											</table>
-											<a href="#">Select product or service</a>
-										</div>
+													<!--end::Input group-->
 
-										<div class="col-xxl-6 mb-5 mb-xl-10">
-											<div class="card card-flush h-100" style="min-height: 100%;">
-												<div class="card-header pt-5">
-													<ul class="nav nav-pills nav-pills-custom mb-6" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 100%;">
-														<h3 class="card-title align-items-start flex-column" style="font-family: Arial, sans-serif; color: #333; width: 100%;">
-															<input type="text" placeholder="Notes" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; margin-top: 10px;"><br>
-															<input type="text" placeholder="Terms" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; margin-top: 10px;"><br>
-															<label for="payment-date" class="fw-bold" style="color: #34495e; font-size: 18px;">Date:</label>
-															<input type="date" id="payment-date" placeholder="Payment received date" 
-															style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; margin-top: 10px;">
-														</h3>
-													</ul>
-												</div>
-											</div>
-										</div>
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Full Name</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8">
+															<!--begin::Row-->
+															<div class="row">
+																<!--begin::Col-->
+																<div class="col-lg-6 fv-row">
+																	<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="First name" value="" />
+																</div>
+																<!--end::Col-->
+																<!--begin::Col-->
+																<div class="col-lg-6 fv-row">
+																	<input type="text" name="lname" class="form-control form-control-lg form-control-solid" placeholder="Last name" value="" />
+																</div>
+																<!--end::Col-->
+															</div>
+															<!--end::Row-->
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Business Name
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">Contact Phone</span>
+															<span class="ms-1" data-bs-toggle="tooltip" title="Phone number must be active">
+																<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
+																	<span class="path1"></span>
+																	<span class="path2"></span>
+																	<span class="path3"></span>
+																</i>
+															</span>
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="044 3276 454 935" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Address
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="123 street, place name, City, State, Country" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Email
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="example@example.com" value="" />
+															
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+
+
+
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label fw-semibold fs-6">
+															<span class="required">GST Number</span>
+															<span class="ms-1" data-bs-toggle="tooltip" title="GST number must be valid and approved by the government">
+																<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
+																	<span class="path1"></span>
+																	<span class="path2"></span>
+																	<span class="path3"></span>
+																</i>
+															</span>
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="3276 454 935" value="" />
+															<span><a href="" style="color: #000;">Select a existing customer</a></span>
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Other Details
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Item specifications" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+
+
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Date
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="date" name="company" class="form-control form-control-lg form-control-solid" placeholder="Date" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+
+
+
+													<!--begin::Input group-->
+													<div class="row mb-6">
+														<!--begin::Label-->
+														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Payment Terms
+														</label>
+														<!--end::Label-->
+														<!--begin::Col-->
+														<div class="col-lg-8 fv-row">
+															<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Payment Terms" value="" />
+														</div>
+														<!--end::Col-->
+													</div>
+													<!--end::Input group-->
+
+
+
+
+
+
+
+
+
+
 										
 										
-										<div class="col-xl-6 mb-5 mb-xl-10">
-											<div class="card card-flush h-xl-100">
-												<div class="card-body pt-6">
-													<ul class="nav nav-pills nav-pills-custom mb-3" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-														<h3 class="card-title align-items-start flex-column" style="font-family: Arial, sans-serif; color: #333; width: 100%;">
-															<table style="width: 100%; border-collapse: collapse;">
-																<tr>
-																	<td style="padding: 10px; font-weight: bold; color: #2c3e50;">Subtotal</td>
-																	<td style="padding: 10px; text-align: right; color: #34495e;">3600.00</td>
-																</tr>
-																<tr style="border-bottom: 1px solid #ccc;">
-																	<td style="padding: 10px; font-weight: bold; color: #34495e;">Discount</td>
-																	<td style="padding: 10px; text-align: right;">
-																		<input type="text" placeholder="%" style="width: 85px; border: 1px solid #ccc; border-radius: 4px; position: relative; left: -100px;">
-																		<span style="padding-left: 10px; color: #34495e;">0.0</span>
-																	</td>
-																</tr>
-																<tr style="border-bottom: 1px solid #ccc;">
-																	<td style="padding: 10px; font-weight: bold; color: #34495e;">Tax</td>
-																	<td style="padding: 10px; text-align: right;">
-																		<input type="text" placeholder="%" style="width: 85px; position: relative; left: -100px; border: 1px solid #ccc; border-radius: 4px;">
-																		<span style="padding-left: 10px; color: #34495e;">0.0</span>
-																	</td>
-																</tr>
-																<tr style="border-bottom: 1px solid #ccc;">
-																	<td style="padding: 10px; font-weight: bold; color: #34495e;">Total</td>
-																	<td style="padding: 10px; text-align: right; color: #34495e;">3600.00</td>
-																</tr>
-																<tr style="border-bottom: 1px solid #ccc;">
-																	<td style="padding: 10px; font-weight: bold; color: #34495e;">Amount Paid</td>
-																	<td style="padding: 10px; text-align: right;">
-																		<input type="text" placeholder="0.0" style="width: 85px; position: relative; left: -140px; border: 1px solid #ccc; border-radius: 4px;">
-																	</td>
-																</tr>
-																<tr style="border-bottom: 1px solid #ccc;">
-																	<td style="padding: 10px; font-weight: bold; color: #34495e;"><b>Balance Due</b></td>
-																	<td style="padding: 10px; text-align: right;">
-																		<input type="text" placeholder="3600.00" style="width: 100px; position: relative; left: -125px; border: 1px solid #ccc; border-radius: 4px;">
-																	</td>
-																</tr>
-															</table>
-															<!-- Trigger Button -->
-															<div style="text-align: center; margin-top: 20px;">
-																<button type="button" style="background-color: orange; color: #000; padding: 10px 70px; border: none; border-radius: 5px;" class="btn" onclick="openInvoicePopup()">Preview Invoice</button>
-															</div>
-															
-															<!-- Popup Structure -->
-															<div id="invoicePopup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; overflow-y: auto;">
-																<div style="background-color: white; width: 60%; margin: 5% auto; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); position: relative;">
-																	<!-- Close Button -->
-																	<span onclick="closeInvoicePopup()" style="position: absolute; top: 10px; right: 20px; cursor: pointer; font-size: 20px;">&times;</span>
-																	
-																	<!-- Invoice Header -->
-																	<div style="text-align: center; margin-bottom: 20px;">
-																		<div class="container" style="max-width: 200px; position: relative; right: -230px; top: 10px; height: 130px; background-image: url('assets/media/misc/profile-head-bg.jpg'); background-size: contain; background-repeat: no-repeat;">
-																			<h1 style="font-size: 24px; color: #333; padding: 30px;">INVOICE</h1>
-																		</div>
-																		<img src="assets/media/misc/saul-welcome.png" alt="Company Logo" style="max-width: 200px; margin-bottom: 10px; position: relative; left: -320px; top: -140px;">
-																		<p style="position: relative; top: -150px; left: -250px;"><strong>Payment Method:</strong> PayPal, Credit Card</p>
-																		<img src="assets/media/misc/menu-header-bg.jpg" style="position: relative; top: -150px; left: -20px; width: 878px; height: 50px;" alt="">
-																	</div>
-															
-																	<!-- Invoice Details -->
-																	<div style="display: flex; justify-content: space-between; position: relative; top: -150px;">
-																		<div>
-																			<p><strong>Invoice To</strong></p>
-																			<p>King Khan</p>
-																			<p>123 street, Las Vegas</p>
-																			<p>USA</p>
-																			<p>example@example.com</p>
-																			<p><strong>Invoice Number:</strong> #INV12345</p>
-																			<p><strong>Date:</strong> 10-09-2024</p>
-																		</div>
-																		<div>
-																			<p><strong>Pay To:</strong></p>
-																			<p>John Doe</p>
-																			<p>1234 Market St, Suite 500</p>
-																			<p>San Francisco, CA, USA</p>
-																			<p>john@example.com</p>
-																		</div>
-																	</div>
-															
-																	<!-- Table of Services -->
-																	<table style="width: 100%; border-collapse: collapse; margin-top: 20px; position: relative; top: -150px;">
-																		<thead>
-																			<tr style="background-color: #007bff;">
-																				<th style="padding: 10px; border: 1px solid #ddd;">Item</th>
-																				<th style="padding: 10px; border: 1px solid #ddd;">Description</th>
-																				<th style="padding: 10px; border: 1px solid #ddd;">Price</th>
-																				<th style="padding: 10px; border: 1px solid #ddd;">Qty</th>
-																				<th style="padding: 10px; border: 1px solid #ddd;">Total</th>
-																			</tr>
-																		</thead>
-																		<tbody>
-																			<tr>
-																				<td style="padding: 10px; border: 1px solid #ddd;">Web Development</td>
-																				<td style="padding: 10px; border: 1px solid #ddd;">Developing a responsive website</td>
-																				<td style="padding: 10px; border: 1px solid #ddd;">$500</td>
-																				<td style="padding: 10px; border: 1px solid #ddd;">1</td>
-																				<td style="padding: 10px; border: 1px solid #ddd;">$500</td>
-																			</tr>
-																			<tr>
-																				<td style="padding: 10px; border: 1px solid #ddd;">SEO Optimization</td>
-																				<td style="padding: 10px; border: 1px solid #ddd;">SEO and content optimization</td>
-																				<td style="padding: 10px; border: 1px solid #ddd;">$300</td>
-																				<td style="padding: 10px; border: 1px solid #ddd;">1</td>
-																				<td style="padding: 10px; border: 1px solid #ddd;">$300</td>
-																			</tr>
-																		</tbody>
-																	</table>
-															
-																	<!-- Payment Summary -->
-																	<div style="text-align: right; margin-top: 20px; position: relative; top: -150px;">
-																		<p><strong>Subtotal:</strong> $800</p>
-																		<p><strong>Tax (5%):</strong> $40</p>
-																		<p><strong>Grand Total:</strong> $840</p>
-																	</div>
-															
-																	<!-- Payment Info -->
-																	<div style="margin-top: 30px; position: relative; top: -150px;">
-																		<p><strong>Payment Info:</strong></p>
-																		<p>Credit Card ending in 1234</p>
-																		<div style="background-color: #007bff; width: fit-content; padding: 10px; width: 200px; position: relative; top: -10;">
-																		<p>Amount Paid: $840</p>
-																	</div>
-																	</div>
-															
-																	<!-- Footer with Icons -->
-																	<div style="text-align: center; margin-top: 30px;">
-																		<button onclick="window.print()" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; margin-right: 10px;">
-																			<i class="fas fa-print"></i> Print
-																		</button>
-																		<button onclick="downloadInvoice()" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
-																			<i class="fas fa-download"></i> Download
-																		</button>
-																	</div>
-																</div>
-															</div>
-															
-
-
-
-														</h3>
-													</ul>
-												</div>
-											</div>
-										</div>
+										
+										
 										
 										
 										
@@ -2133,6 +1848,587 @@
 								<!--end::Content container-->
 							</div>
 							<!--end::Content-->
+							<!--begin::Content-->
+							<div id="kt_account_settings_profile_details" class="collapse show">
+								<!--begin::Form-->
+								<form id="kt_account_profile_details_form" class="form">
+									<!--begin::Card body-->
+									<div class="card-body border-top p-9">
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">Who is this Invoice To</h1>
+											<!--end::Label-->
+											
+										</div>
+										<!--end::Input group-->
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Full Name</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8">
+												<!--begin::Row-->
+												<div class="row">
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+														<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="First name" value="" />
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+														<input type="text" name="lname" class="form-control form-control-lg form-control-solid" placeholder="Last name" value="" />
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Business Name
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="" />
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label fw-semibold fs-6">
+												<span class="required">Contact Phone</span>
+												<span class="ms-1" data-bs-toggle="tooltip" title="Phone number must be active">
+													<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
+														<span class="path1"></span>
+														<span class="path2"></span>
+														<span class="path3"></span>
+													</i>
+												</span>
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="044 3276 454 935" value="" />
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Address
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="123 street, place name, City, State, Country" value="" />
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Email
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="example@example.com" value="" />
+												
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label fw-semibold fs-6">
+												<span class="required">GST Number</span>
+												<span class="ms-1" data-bs-toggle="tooltip" title="GST number must be valid and approved by the government">
+													<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
+														<span class="path1"></span>
+														<span class="path2"></span>
+														<span class="path3"></span>
+													</i>
+												</span>
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="3276 454 935" value="" />
+												<span><a href="" style="color: #000;">Select a existing customer</a></span>
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Other Details
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Item specifications" value="" />
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Date
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="date" name="company" class="form-control form-control-lg form-control-solid" placeholder="Date" value="" />
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Payment Terms
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Payment Terms" value="" />
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+									</div>
+
+
+
+
+
+
+
+
+
+							<div style="margin: 20px auto; width: 90%;border-radius: 8px; padding: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+								<table class="table" style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; color: #333;">
+									<thead>
+										<tr style="background-color: #2c3e50; color: #fff; text-align: center;">
+											<th scope="col" style="padding: 12px; font-size: 18px;">Services</th>
+											<th scope="col" style="padding: 12px; font-size: 18px;">Quantity</th>
+											<th scope="col" style="padding: 12px; font-size: 18px;">Price</th>
+											<th scope="col" style="padding: 12px; font-size: 18px;">Subtotal</th>
+											<th scope="col" style="padding: 12px; font-size: 18px;">Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr style="text-align: center;">
+											<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Enter the product name" style="width: 127%; padding: 8px;">
+											</td>
+											
+											<td><input type="number" class="form-control form-control-lg form-control-solid" placeholder="Quantity" value="Quantity" style="width: 77%; padding: 8px;  	border-radius: 4px; position: relative; left: 40px;"></td>
+											<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Price" style="width: 80%; padding: 8px; position: relative; left: 40px;"></td>
+											<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Subtotal" style="width: 80%; padding: 8px; position: relative; left: 35px;"></td>
+											<td><button class="btn btn-danger" style="padding: 6px 12px; border-radius: 4px; background-color: #e74c3c; color: #fff; border: none;">Remove</button></td>
+										</tr>
+										
+									</tbody>
+								</table>
+								<a href="#">Select product or service</a>
+							</div>
+
+
+
+
+
+
+
+
+							<div id="kt_account_settings_profile_details" class="collapse show">
+								<!--begin::Form-->
+								<form id="kt_account_profile_details_form" class="form">
+									<!--begin::Card body-->
+									<div class="card-body border-top p-9">
+										<!--begin::Input group-->
+										
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label fw-semibold fs-6">Notes
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Notes" value="" />
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+										
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label fw-semibold fs-6">Terms
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Terms and Conditions if any" value="" />
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+										
+
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Date
+											</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8 fv-row">
+												<input type="date" name="company" class="form-control form-control-lg form-control-solid" placeholder="Date" value="" />
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+
+
+										
+									</div>
+
+
+
+
+
+
+							<div id="kt_account_settings_profile_details" class="collapse show">
+								<!--begin::Form-->
+								<form id="kt_account_profile_details_form" class="form">
+									<!--begin::Card body-->
+									<div class="card-body border-top p-9">
+										
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label fw-semibold fs-6">Sub Total</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8">
+												<!--begin::Row-->
+												<div class="row">
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>3600.00</b></label>
+
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label fw-semibold fs-6">Discount</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8">
+												<!--begin::Row-->
+												<div class="row">
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+														<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="%" />
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>0.0</b></label>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label fw-semibold fs-6">Tax</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8">
+												<!--begin::Row-->
+												<div class="row">
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+														<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="%" />
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>0.0</b></label>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label fw-semibold fs-6">Total</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8">
+												<!--begin::Row-->
+												<div class="row">
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>3600.00</b></label>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label fw-semibold fs-6">Amount Paid</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8">
+												<!--begin::Row-->
+												<div class="row">
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+														<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="0.0" />
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+
+
+										<!--begin::Input group-->
+										<div class="row mb-6">
+											<!--begin::Label-->
+											<label class="col-lg-4 col-form-label fw-semibold fs-6">Balance Amount</label>
+											<!--end::Label-->
+											<!--begin::Col-->
+											<div class="col-lg-8">
+												<!--begin::Row-->
+												<div class="row">
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+														<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="3600.00" />
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-lg-6 fv-row">
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Input group-->
+
+
+										
+									</div>
+
+							
+							
+							
+							<div class="col-xl-6 mb-5 mb-xl-10">
+								<div class="card card-flush h-xl-100" style=" position: relative; left: 50%;">
+										<ul class="nav nav-pills nav-pills-custom mb-3" style=" padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+											<h3 class="card-title align-items-start flex-column" style="font-family: Arial, sans-serif; color: #333; width: 100%;">
+												
+												<!-- Trigger Button -->
+												<div style="text-align: center; margin-top: 20px;">
+													<button type="button" style="background-color: orange; color: #000; padding: 10px 70px; border: none; border-radius: 5px;" class="btn" onclick="openInvoicePopup()">Preview Invoice</button>
+												</div>
+												
+												<!-- Popup Structure -->
+												<div id="invoicePopup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; overflow-y: auto;">
+													<div style="background-color: white; width: 60%; margin: 5% auto; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); position: relative;">
+														<!-- Close Button -->
+														<span onclick="closeInvoicePopup()" style="position: absolute; top: 10px; right: 20px; cursor: pointer; font-size: 20px;">&times;</span>
+														
+														<!-- Invoice Header -->
+														<div style="text-align: center; margin-bottom: 20px;">
+															<div class="container" style="max-width: 300px; position: relative; right: -320px; top: 20px; height: 130px;">
+																<h1 style="font-size: 38px; color: #333; padding: 30px;">INVOICE</h1>
+															</div>
+															<img src="assets/media/misc/saul-welcome.png" alt="Company Logo" style="max-width: 200px; margin-bottom: 10px; position: relative; left: -320px; top: -140px;">
+															<p style="position: relative; top: -150px; left: -250px;"><strong>Payment Method:</strong> PayPal, Credit Card</p>
+															<p style=" position: relative; top: -192px; left: 344px;"><strong>Date:</strong> 04-11-2028</p>
+
+															<img src="assets/media/misc/menu-header-bg.jpg" style="position: relative; top: -190px; left: -20px; width: 878px; height: 50px;" alt="">
+														</div>
+												
+														<!-- Invoice Details -->
+														<div style="display: flex; justify-content: space-between; position: relative; top: -190px;">
+															<div>
+																<p><strong>Invoice To</strong></p>
+																<p>King Khan</p>
+																<p>123 street, Las Vegas</p>
+																<p>USA</p>
+																<p>example@example.com</p>
+																<p><strong>Phone Number:</strong> 1234456789</p>
+																<p><strong>Invoice Number:</strong> #INV12345</p>
+																<p><strong>Date:</strong> 10-09-2024</p>
+															</div>
+															<div>
+																<p><strong>Pay To:</strong></p>
+																<p>John Doe</p>
+																<p>1234 Market St, Suite 500</p>
+																<p>San Francisco, CA, USA</p>
+																<p>john@example.com</p>
+																<p><strong>Phone Number:</strong> 1234456789</p>
+															</div>
+														</div>
+												
+														<!-- Table of Services -->
+														<table style="width: 100%; border-collapse: collapse; margin-top: 20px; position: relative; top: -180px;">
+															<thead>
+																<tr style="background-color: #007bff;">
+																	<th style="padding: 10px; border: 1px solid #ddd;">Item</th>
+																	<th style="padding: 10px; border: 1px solid #ddd;">Description</th>
+																	<th style="padding: 10px; border: 1px solid #ddd;">Price</th>
+																	<th style="padding: 10px; border: 1px solid #ddd;">Qty</th>
+																	<th style="padding: 10px; border: 1px solid #ddd;">Total</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td style="padding: 10px; border: 1px solid #ddd;">Web Development</td>
+																	<td style="padding: 10px; border: 1px solid #ddd;">Developing a responsive website</td>
+																	<td style="padding: 10px; border: 1px solid #ddd;">$500</td>
+																	<td style="padding: 10px; border: 1px solid #ddd;">1</td>
+																	<td style="padding: 10px; border: 1px solid #ddd;">$500</td>
+																</tr>
+																<tr>
+																	<td style="padding: 10px; border: 1px solid #ddd;">SEO Optimization</td>
+																	<td style="padding: 10px; border: 1px solid #ddd;">SEO and content optimization</td>
+																	<td style="padding: 10px; border: 1px solid #ddd;">$300</td>
+																	<td style="padding: 10px; border: 1px solid #ddd;">1</td>
+																	<td style="padding: 10px; border: 1px solid #ddd;">$300</td>
+																</tr>
+															</tbody>
+														</table>
+												
+														<!-- Payment Summary -->
+														<div style="text-align: right; margin-top: 20px; position: relative; top: -180px;">
+															<p><strong>Subtotal:</strong> $800</p>
+															<p><strong>Tax (5%):</strong> $40</p>
+															<p><strong>Grand Total:</strong> $840</p>
+														</div>
+												
+														<!-- Payment Info -->
+														<div style="margin-top: 30px; position: relative; top: -290px;">
+															<p><strong>Payment Info:</strong></p>
+															<p>Credit Card : 12*********34</p>
+															<div style="background-color: #007bff; width: fit-content; padding: 10px; width: 200px; position: relative; top: -10;">
+															<p>Amount Paid: $840</p>
+														</div>
+														</div>
+												
+														<!-- Footer with Icons -->
+														<div style="text-align: center; margin-top: 30px; position: relative; top: -240px;">
+															<button onclick="window.print()" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; margin-right: 10px;">
+																<i class="fas fa-print"></i> Print
+															</button>
+															<button onclick="downloadInvoice()" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
+																<i class="fas fa-download"></i> Download
+															</button>
+														</div>
+													</div>
+												</div>
+												
+
+
+
+											</h3>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							
+							
+										
+										<!--end::Nav-->
+										
+					</div>
+					<!--end::Content container-->
+				</div>
+				<!--end::Content-->
 						</div>
 						<!--end::Content wrapper-->
 						<!--begin::Footer-->
@@ -2145,9 +2441,7 @@
 							<!--end::Copyright-->
 							<!--begin::Menu-->
 							<ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-								<li class="menu-item">
-									<a href="#" target="_blank" class="menu-link px-2">About</a>
-								</li>
+								
 								<li class="menu-item">
 									<a href="#" target="_blank" class="menu-link px-2">Support</a>
 								</li>
@@ -2172,20 +2466,7 @@
 									<span class="path6"></span>
 								</i>
 							</a> -->
-							<a href="../dist/account/overview.html" class="btn btn-icon btn-color-warning bg-hover-body h-45px w-45px flex-shrink-0 mb-4" data-bs-toggle="tooltip" title="Profile" data-bs-custom-class="tooltip-inverse">
-								<i class="ki-duotone ki-message-add fs-2qx">
-									<span class="path1"></span>
-									<span class="path2"></span>
-									<span class="path3"></span>
-								</i>
-							</a>
-							<a href="../dist/apps/ecommerce/catalog/products.html" class="btn btn-icon btn-color-info bg-hover-body h-45px w-45px flex-shrink-0 mb-4" data-bs-toggle="tooltip" title="Products" data-bs-custom-class="tooltip-inverse">
-								<i class="ki-duotone ki-devices-2 fs-2qx">
-									<span class="path1"></span>
-									<span class="path2"></span>
-									<span class="path3"></span>
-								</i>
-							</a>
+							
 						</div>
 						<!--end::Wrapper-->
 					</div>
@@ -7270,6 +7551,35 @@
 		alert("Download function goes here");
 	}
 	</script>
+
+
+
+
+
+<!--Upload Image + icon begin-->
+<script>
+    // JavaScript to trigger file upload when the + button is clicked
+    document.querySelector('.btn-plus').addEventListener('click', function() {
+        document.getElementById('uploadImage').click();
+    });
+
+    // Add hover effect on button
+    document.querySelector('.btn-plus').addEventListener('mouseover', function() {
+        this.style.backgroundColor = '#218838';
+        this.style.transform = 'scale(1.1)';
+    });
+
+    document.querySelector('.btn-plus').addEventListener('mouseout', function() {
+        this.style.backgroundColor = '#28a745';
+        this.style.transform = 'scale(1)';
+    });
+</script>
+<!--Upload Image + icon end-->
+
+
+
+
+
 	</body>
 	<!--end::Body-->
 </html>
