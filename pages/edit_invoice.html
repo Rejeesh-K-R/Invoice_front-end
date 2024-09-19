@@ -1627,8 +1627,22 @@
 										</div>
 										<!--end::Page title-->
 										<!--begin::Actions-->
-										<h5  class="fw-semibold fs-6" style="position: relative; right: -500px; top: -30px;">Invoice Number</h5><br>
-										<input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" style="width: 20%;" placeholder="#00228383" value="#00228383">
+										<h5 class="fw-semibold mb-3 mb-lg-0 text-center text-lg-end" style="position: relative; right: -33%; top: -22%; max-width: 20%;">
+											Invoice number
+										</h5>
+										
+										<style>
+											@media (max-width: 768px) {
+												h5 {
+													position: static;  /* Remove the absolute positioning for mobile */
+													width: 100%;       /* Ensure it takes up full width */
+													top: 0;
+													right: 0;
+													max-width: 100%;   /* No restriction on width for small screens */
+												}
+											}
+										</style>
+																				<input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" style="width: 20%;" placeholder="#00228383" value="#00228383">
 										<!--end::Actions-->
 									</div>
 									<!--end::Toolbar wrapper-->
@@ -1642,13 +1656,13 @@
 
 <!--Editing start's Here-->
 
-							<div id="kt_app_content" class="app-content flex-column-fluid">
-								<!--begin::Content container-->
-								<div id="kt_app_content_container" class="app-container container-fluid">
-									<!--begin::Products-->
-									<div class="card card-flush">
-										<!--begin::Card header-->
-										
+<div id="kt_app_content" class="app-content flex-column-fluid">
+	<!--begin::Content container-->
+	<div id="kt_app_content_container" class="app-container container-fluid">
+		<!--begin::Products-->
+		<div class="card card-flush">
+			<!--begin::Card header-->
+			
 
 
 
@@ -1659,832 +1673,753 @@
 
 
 
-										
-										
+			
+			
 
 
 
-										<!--begin::Content-->
-										<div id="kt_account_settings_profile_details" class="collapse show">
-											<!--begin::Form-->
-											<form id="kt_account_profile_details_form" class="form">
-												<!--begin::Card body-->
-												<div class="card-body border-top p-9">
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">Who is this Invoice From</h1>
-														<!--end::Label-->
-														
-													</div>
-													<!--end::Input group-->
+			<!--begin::Content-->
+			<div class="row">
+				<div class="col-md-6">
+			<div id="kt_account_settings_profile_details" class="collapse show">
+				<!--begin::Form-->
+				<form id="kt_account_profile_details_form" class="form">
+					<!--begin::Card body-->
+					<div class="card-body border-top p-9">
+						<!--begin::Input group-->
+						<div class="row mb-6">
+							<!--begin::Label-->
+							<h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">Who is this Invoice From</h1>
+							<!--end::Label-->
+							
+						</div>
+						<!--end::Input group-->
 
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Full Name</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8">
-															<!--begin::Row-->
-															<div class="row">
-																<!--begin::Col-->
-																<div class="col-lg-6 fv-row">
-																	<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="First name" value="" />
-																</div>
-																<!--end::Col-->
-																<!--begin::Col-->
-																<div class="col-lg-6 fv-row">
-																	<input type="text" name="lname" class="form-control form-control-lg form-control-solid" placeholder="Last name" value="" />
-																</div>
-																<!--end::Col-->
-															</div>
-															<!--end::Row-->
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Business Name
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="" />
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label fw-semibold fs-6">
-															<span class="required">Contact Phone</span>
-															<span class="ms-1" data-bs-toggle="tooltip" title="Phone number must be active">
-																<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
-																	<span class="path1"></span>
-																	<span class="path2"></span>
-																	<span class="path3"></span>
-																</i>
-															</span>
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="044 3276 454 935" value="" />
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Address
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="123 street, place name, City, State, Country" value="" />
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Email
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="example@example.com" value="" />
-															
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label fw-semibold fs-6">
-															<span class="required">GST Number</span>
-															<span class="ms-1" data-bs-toggle="tooltip" title="GST number must be valid and approved by the government">
-																<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
-																	<span class="path1"></span>
-																	<span class="path2"></span>
-																	<span class="path3"></span>
-																</i>
-															</span>
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="3276 454 935" value="" />
-															<span><a href="" style="color: #000;">Select a existing customer</a></span>
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Other Details
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Item specifications" value="" />
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Date
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="date" name="company" class="form-control form-control-lg form-control-solid" placeholder="Date" value="" />
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label required fw-semibold fs-6">Payment Terms
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Payment Terms" value="" />
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-
-
-
-
-
-
-
-
-
-										
-										
-										
-										
-										
-										
-										
-													
-													<!--end::Nav-->
-													
+						<!--begin::Input group-->
+						<div class="row mb-6">
+							<!--begin::Label-->
+							<label class="col-lg-4 col-form-label required fw-semibold fs-6">Full Name</label>
+							<!--end::Label-->
+							<!--begin::Col-->
+							<div class="col-lg-8">
+								<!--begin::Row-->
+								<div class="row">
+									<!--begin::Col-->
+									<div class="col-lg-6 fv-row">
+										<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="First name" value="" />
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-lg-6 fv-row">
+										<input type="text" name="lname" class="form-control form-control-lg form-control-solid" placeholder="Last name" value="" />
+									</div>
+									<!--end::Col-->
 								</div>
-								<!--end::Content container-->
+								<!--end::Row-->
 							</div>
-							<!--end::Content-->
-							<!--begin::Content-->
-							<div id="kt_account_settings_profile_details" class="collapse show">
-								<!--begin::Form-->
-								<form id="kt_account_profile_details_form" class="form">
-									<!--begin::Card body-->
-									<div class="card-body border-top p-9">
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">Who is this Invoice From</h1>
-											<!--end::Label-->
-											
-										</div>
-										<!--end::Input group-->
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Full Name</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8">
-												<!--begin::Row-->
-												<div class="row">
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-														<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="First name" value="" />
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-														<input type="text" name="lname" class="form-control form-control-lg form-control-solid" placeholder="Last name" value="" />
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Business Name
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="" />
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label fw-semibold fs-6">
-												<span class="required">Contact Phone</span>
-												<span class="ms-1" data-bs-toggle="tooltip" title="Phone number must be active">
-													<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
-														<span class="path1"></span>
-														<span class="path2"></span>
-														<span class="path3"></span>
-													</i>
-												</span>
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="044 3276 454 935" value="" />
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Address
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="123 street, place name, City, State, Country" value="" />
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Email
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="example@example.com" value="" />
-												
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label fw-semibold fs-6">
-												<span class="required">GST Number</span>
-												<span class="ms-1" data-bs-toggle="tooltip" title="GST number must be valid and approved by the government">
-													<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
-														<span class="path1"></span>
-														<span class="path2"></span>
-														<span class="path3"></span>
-													</i>
-												</span>
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="3276 454 935" value="" />
-												<span><a href="" style="color: #000;">Select a existing customer</a></span>
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Other Details
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Item specifications" value="" />
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Date
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="date" name="company" class="form-control form-control-lg form-control-solid" placeholder="Date" value="" />
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Payment Terms
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Payment Terms" value="" />
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-									</div>
-
-
-
-
-
-
-
-
-
-							<div style="margin: 20px auto; width: 90%;border-radius: 8px; padding: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-								<table class="table" style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; color: #333;">
-									<thead>
-										<tr style="background-color: #2c3e50; color: #fff; text-align: center;">
-											<th scope="col" style="padding: 12px; font-size: 18px;">Services</th>
-											<th scope="col" style="padding: 12px; font-size: 18px;">Quantity</th>
-											<th scope="col" style="padding: 12px; font-size: 18px;">Price</th>
-											<th scope="col" style="padding: 12px; font-size: 18px;">Subtotal</th>
-											<th scope="col" style="padding: 12px; font-size: 18px;">Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr style="text-align: center;">
-											<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Enter the product name" style="width: 127%; padding: 8px;">
-											</td>
-											
-											<td><input type="number" class="form-control form-control-lg form-control-solid" placeholder="Quantity" value="Quantity" style="width: 77%; padding: 8px;  	border-radius: 4px; position: relative; left: 40px;"></td>
-											<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Price" style="width: 80%; padding: 8px; position: relative; left: 40px;"></td>
-											<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Subtotal" style="width: 80%; padding: 8px; position: relative; left: 35px;"></td>
-											<td><button class="btn btn-danger" style="padding: 6px 12px; border-radius: 4px; background-color: #e74c3c; color: #fff; border: none;">Remove</button></td>
-										</tr>
-										
-									</tbody>
-								</table>
-								<a href="#">Select product or service</a>
-							</div>
-
-
-
-
-
-
-
-
-							<div id="kt_account_settings_profile_details" class="collapse show">
-								<!--begin::Form-->
-								<form id="kt_account_profile_details_form" class="form">
-									<!--begin::Card body-->
-									<div class="card-body border-top p-9">
-										<!--begin::Input group-->
-										
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label fw-semibold fs-6">Notes
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Notes" value="" />
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-										
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label fw-semibold fs-6">Terms
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Terms and Conditions if any" value="" />
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-										
-
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label required fw-semibold fs-6">Date
-											</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8 fv-row">
-												<input type="date" name="company" class="form-control form-control-lg form-control-solid" placeholder="Date" value="" />
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-
-
-										
-									</div>
-
-
-
-
-
-
-							<div id="kt_account_settings_profile_details" class="collapse show">
-								<!--begin::Form-->
-								<form id="kt_account_profile_details_form" class="form">
-									<!--begin::Card body-->
-									<div class="card-body border-top p-9">
-										
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label fw-semibold fs-6">Sub Total</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8">
-												<!--begin::Row-->
-												<div class="row">
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>3600.00</b></label>
-
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label fw-semibold fs-6">Discount</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8">
-												<!--begin::Row-->
-												<div class="row">
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-														<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="%" />
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>0.0</b></label>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label fw-semibold fs-6">Tax</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8">
-												<!--begin::Row-->
-												<div class="row">
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-														<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="%" />
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>0.0</b></label>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label fw-semibold fs-6">Total</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8">
-												<!--begin::Row-->
-												<div class="row">
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>3600.00</b></label>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label fw-semibold fs-6">Amount Paid</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8">
-												<!--begin::Row-->
-												<div class="row">
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-														<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="0.0" />
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-
-
-										<!--begin::Input group-->
-										<div class="row mb-6">
-											<!--begin::Label-->
-											<label class="col-lg-4 col-form-label fw-semibold fs-6">Balance Amount</label>
-											<!--end::Label-->
-											<!--begin::Col-->
-											<div class="col-lg-8">
-												<!--begin::Row-->
-												<div class="row">
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-														<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="3600.00" />
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-lg-6 fv-row">
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Input group-->
-
-
-										
-									</div>
-
-							
-							
-							
-							<div class="col-xl-6 mb-5 mb-xl-10">
-								<div class="card card-flush h-xl-100" style=" position: relative; left: 50%;">
-										<ul class="nav nav-pills nav-pills-custom mb-3" style=" padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-											<h3 class="card-title align-items-start flex-column" style="font-family: Arial, sans-serif; color: #333; width: 100%;">
-												
-												<!-- Trigger Button -->
-												<div style="text-align: center; margin-top: 20px;">
-													<button type="button" style="background-color: orange; color: #000; padding: 10px 70px; border: none; border-radius: 5px;" class="btn" onclick="openInvoicePopup()">Preview Invoice</button>
-												</div>
-												
-												<!-- Popup Structure -->
-												<div id="invoicePopup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; overflow-y: auto;">
-													<div style="background-color: white; width: 60%; margin: 5% auto; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); position: relative;">
-														<!-- Close Button -->
-														<span onclick="closeInvoicePopup()" style="position: absolute; top: 10px; right: 20px; cursor: pointer; font-size: 20px;">&times;</span>
-														
-														<!-- Invoice Header -->
-														<div style="text-align: center; margin-bottom: 20px;">
-															<div class="container" style="max-width: 300px; position: relative; right: -320px; top: 20px; height: 130px;">
-																<h1 style="font-size: 38px; color: #333; padding: 30px;">INVOICE</h1>
-															</div>
-															<img src="assets/media/misc/saul-welcome.png" alt="Company Logo" style="max-width: 200px; margin-bottom: 10px; position: relative; left: -320px; top: -140px;">
-															<p style="position: relative; top: -150px; left: -250px;"><strong>Payment Method:</strong> PayPal, Credit Card</p>
-															<p style=" position: relative; top: -192px; left: 344px;"><strong>Date:</strong> 04-11-2028</p>
-
-															<img src="assets/media/misc/menu-header-bg.jpg" style="position: relative; top: -190px; left: -20px; width: 878px; height: 50px;" alt="">
-														</div>
-												
-														<!-- Invoice Details -->
-														<div style="display: flex; justify-content: space-between; position: relative; top: -190px;">
-															<div>
-																<p><strong>Invoice To</strong></p>
-																<p>King Khan</p>
-																<p>123 street, Las Vegas</p>
-																<p>USA</p>
-																<p>example@example.com</p>
-																<p><strong>Phone Number:</strong> 1234456789</p>
-																<p><strong>Invoice Number:</strong> #INV12345</p>
-																<p><strong>Date:</strong> 10-09-2024</p>
-															</div>
-															<div>
-																<p><strong>Pay To:</strong></p>
-																<p>John Doe</p>
-																<p>1234 Market St, Suite 500</p>
-																<p>San Francisco, CA, USA</p>
-																<p>john@example.com</p>
-																<p><strong>Phone Number:</strong> 1234456789</p>
-															</div>
-														</div>
-												
-														<!-- Table of Services -->
-														<table style="width: 100%; border-collapse: collapse; margin-top: 20px; position: relative; top: -180px;">
-															<thead>
-																<tr style="background-color: #007bff;">
-																	<th style="padding: 10px; border: 1px solid #ddd;">Item</th>
-																	<th style="padding: 10px; border: 1px solid #ddd;">Description</th>
-																	<th style="padding: 10px; border: 1px solid #ddd;">Price</th>
-																	<th style="padding: 10px; border: 1px solid #ddd;">Qty</th>
-																	<th style="padding: 10px; border: 1px solid #ddd;">Total</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td style="padding: 10px; border: 1px solid #ddd;">Web Development</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">Developing a responsive website</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">$500</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">1</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">$500</td>
-																</tr>
-																<tr>
-																	<td style="padding: 10px; border: 1px solid #ddd;">SEO Optimization</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">SEO and content optimization</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">$300</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">1</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">$300</td>
-																</tr>
-															</tbody>
-														</table>
-												
-														<!-- Payment Summary -->
-														<div style="text-align: right; margin-top: 20px; position: relative; top: -180px;">
-															<p><strong>Subtotal:</strong> $800</p>
-															<p><strong>Tax (5%):</strong> $40</p>
-															<p><strong>Grand Total:</strong> $840</p>
-														</div>
-												
-														<!-- Payment Info -->
-														<div style="margin-top: 30px; position: relative; top: -290px;">
-															<p><strong>Payment Info:</strong></p>
-															<p>Credit Card : 12*********34</p>
-															<div style="background-color: #007bff; width: fit-content; padding: 10px; width: 200px; position: relative; top: -10;">
-															<p>Amount Paid: $840</p>
-														</div>
-														</div>
-												
-														<!-- Footer with Icons -->
-														<div style="text-align: center; margin-top: 30px; position: relative; top: -240px;">
-															<button onclick="window.print()" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; margin-right: 10px;">
-																<i class="fas fa-print"></i> Print
-															</button>
-															<button onclick="downloadInvoice()" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
-																<i class="fas fa-download"></i> Download
-															</button>
-														</div>
-													</div>
-												</div>
-												
-
-
-
-											</h3>
-										</ul>
-									</div>
-								</div>
-							</div>
-							
-							
-							
-										
-										<!--end::Nav-->
-										
-					</div>
-					<!--end::Content container-->
-				</div>
-				<!--end::Content-->
+							<!--end::Col-->
 						</div>
-						<!--end::Content wrapper-->
-						<!--begin::Footer-->
-						<div id="kt_app_footer" class="app-footer align-items-center justify-content-center justify-content-md-between flex-column flex-md-row py-3">
-							<!--begin::Copyright-->
-							<div class="text-dark order-2 order-md-1">
-								<span class="text-muted fw-semibold me-1">2024&copy;</span>
-								<a href="#" target="_blank" class="text-gray-800 text-hover-primary">Cognetz</a>
+						<!--end::Input group-->
+						<!--begin::Input group-->
+						<div class="row mb-6">
+							<!--begin::Label-->
+							<label class="col-lg-4 col-form-label required fw-semibold fs-6">Business Name
+							</label>
+							<!--end::Label-->
+							<!--begin::Col-->
+							<div class="col-lg-8 fv-row">
+								<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="" />
 							</div>
-							<!--end::Copyright-->
-							<!--begin::Menu-->
-							<ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
+							<!--end::Col-->
+						</div>
+						<!--end::Input group-->
+						<!--begin::Input group-->
+						<div class="row mb-6">
+							<!--begin::Label-->
+							<label class="col-lg-4 col-form-label fw-semibold fs-6">
+								<span class="required">Contact Phone</span>
+								<span class="ms-1" data-bs-toggle="tooltip" title="Phone number must be active">
+									<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
+										<span class="path1"></span>
+										<span class="path2"></span>
+										<span class="path3"></span>
+									</i>
+								</span>
+							</label>
+							<!--end::Label-->
+							<!--begin::Col-->
+							<div class="col-lg-8 fv-row">
+								<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="044 3276 454 935" value="" />
+							</div>
+							<!--end::Col-->
+						</div>
+						<!--end::Input group-->
+
+						<!--begin::Input group-->
+						<div class="row mb-6">
+							<!--begin::Label-->
+							<label class="col-lg-4 col-form-label required fw-semibold fs-6">Address
+							</label>
+							<!--end::Label-->
+							<!--begin::Col-->
+							<div class="col-lg-8 fv-row">
+								<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="123 street, place name, City, State, Country" value="" />
+							</div>
+							<!--end::Col-->
+						</div>
+						<!--end::Input group-->
+
+						<!--begin::Input group-->
+						<div class="row mb-6">
+							<!--begin::Label-->
+							<label class="col-lg-4 col-form-label required fw-semibold fs-6">Email
+							</label>
+							<!--end::Label-->
+							<!--begin::Col-->
+							<div class="col-lg-8 fv-row">
+								<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="example@example.com" value="" />
 								
-								<li class="menu-item">
-									<a href="#" target="_blank" class="menu-link px-2">Support</a>
-								</li>
-								
-							</ul>
-							<!--end::Menu-->
+							</div>
+							<!--end::Col-->
 						</div>
-						<!--end::Footer-->
-					</div>
-					<!--end:::Main-->
-					<!--begin::aside-->
-					<div id="kt_app_aside" class="app-aside flex-column" data-kt-drawer="true" data-kt-drawer-name="app-aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="auto" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_app_aside_mobile_toggle">
-						<!--begin::Wrapper-->
-						<div id="kt_app_aside_wrapper" class="d-flex flex-column align-items-center hover-scroll-y py-5 py-lg-0 gap-4" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_header" data-kt-scroll-wrappers="#kt_app_aside_wrapper" data-kt-scroll-offset="5px">
-							<!-- <a href="#" class="btn btn-icon btn-color-primary bg-hover-body h-45px w-45px flex-shrink-0 mb-4" data-bs-toggle="tooltip" title="Calendar" data-bs-custom-class="tooltip-inverse">
-								<i class="ki-duotone ki-calendar-add fs-2qx">
-									<span class="path1"></span>
-									<span class="path2"></span>
-									<span class="path3"></span>
-									<span class="path4"></span>
-									<span class="path5"></span>
-									<span class="path6"></span>
-								</i>
-							</a> -->
-							
+						<!--end::Input group-->
+
+
+
+						<!--begin::Input group-->
+						<div class="row mb-6">
+							<!--begin::Label-->
+							<label class="col-lg-4 col-form-label fw-semibold fs-6">
+								<span class="required">GST Number</span>
+								<span class="ms-1" data-bs-toggle="tooltip" title="GST number must be valid and approved by the government">
+									<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
+										<span class="path1"></span>
+										<span class="path2"></span>
+										<span class="path3"></span>
+									</i>
+								</span>
+							</label>
+							<!--end::Label-->
+							<!--begin::Col-->
+							<div class="col-lg-8 fv-row">
+								<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="3276 454 935" value="" />
+								<span><a href="" style="color: #000;">Select a existing customer</a></span>
+							</div>
+							<!--end::Col-->
 						</div>
-						<!--end::Wrapper-->
+						<!--end::Input group-->
+
+						<!--begin::Input group-->
+						<div class="row mb-6">
+							<!--begin::Label-->
+							<label class="col-lg-4 col-form-label required fw-semibold fs-6">Other Details
+							</label>
+							<!--end::Label-->
+							<!--begin::Col-->
+							<div class="col-lg-8 fv-row">
+								<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Item specifications" value="" />
+							</div>
+							<!--end::Col-->
+						</div>
+						<!--end::Input group-->
+
+
+						<!--begin::Input group-->
+						<div class="row mb-6">
+							<!--begin::Label-->
+							<label class="col-lg-4 col-form-label required fw-semibold fs-6">Date
+							</label>
+							<!--end::Label-->
+							<!--begin::Col-->
+							<div class="col-lg-8 fv-row">
+								<input type="date" name="company" class="form-control form-control-lg form-control-solid" placeholder="Date" value="" />
+							</div>
+							<!--end::Col-->
+						</div>
+						<!--end::Input group-->
+
+
+
+						<!--begin::Input group-->
+						<div class="row mb-6">
+							<!--begin::Label-->
+							<label class="col-lg-4 col-form-label required fw-semibold fs-6">Payment Terms
+							</label>
+							<!--end::Label-->
+							<!--begin::Col-->
+							<div class="col-lg-8 fv-row">
+								<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Payment Terms" value="" />
+							</div>
+							<!--end::Col-->
+						</div>
+						<!--end::Input group-->
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+			
+			
+			
+						
+						<!--end::Nav-->
+					</form>
+						
+	</div>
+	<!--end::Content container-->
+</div>
+</div>
+<!--end::Content-->
+<!--begin::Content-->
+<div class="col-md-6">
+<div id="kt_account_settings_profile_details" class="collapse show">
+	<!--begin::Form-->
+	<form id="kt_account_profile_details_form" class="form">
+		<!--begin::Card body-->
+		<div class="card-body border-top p-9">
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">Who is this Invoice To</h1>
+				<!--end::Label-->
+				
+			</div>
+			<!--end::Input group-->
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label required fw-semibold fs-6">Full Name</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8">
+					<!--begin::Row-->
+					<div class="row">
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+							<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="First name" value="" />
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+							<input type="text" name="lname" class="form-control form-control-lg form-control-solid" placeholder="Last name" value="" />
+						</div>
+						<!--end::Col-->
 					</div>
-					<!--end::aside-->
+					<!--end::Row-->
 				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label required fw-semibold fs-6">Business Name
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="" />
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label fw-semibold fs-6">
+					<span class="required">Contact Phone</span>
+					<span class="ms-1" data-bs-toggle="tooltip" title="Phone number must be active">
+						<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
+							<span class="path1"></span>
+							<span class="path2"></span>
+							<span class="path3"></span>
+						</i>
+					</span>
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="044 3276 454 935" value="" />
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label required fw-semibold fs-6">Address
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="123 street, place name, City, State, Country" value="" />
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label required fw-semibold fs-6">Email
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="example@example.com" value="" />
+					
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label fw-semibold fs-6">
+					<span class="required">GST Number</span>
+					<span class="ms-1" data-bs-toggle="tooltip" title="GST number must be valid and approved by the government">
+						<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
+							<span class="path1"></span>
+							<span class="path2"></span>
+							<span class="path3"></span>
+						</i>
+					</span>
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="3276 454 935" value="" />
+					<span><a href="" style="color: #000;">Select a existing customer</a></span>
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label required fw-semibold fs-6">Other Details
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Item specifications" value="" />
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label required fw-semibold fs-6">Date
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="date" name="company" class="form-control form-control-lg form-control-solid" placeholder="Date" value="" />
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label required fw-semibold fs-6">Payment Terms
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Payment Terms" value="" />
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col-12">
+        <div style="margin: 20px auto; width: 90%; border-radius: 8px; padding: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            <div class="table-responsive">
+                <table class="table" style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; color: #333;">
+                    <thead>
+                        <tr style="background-color: #2c3e50; color: #fff;">
+                            <th scope="col" style="padding: 10px; font-size: 18px;">Services</th>
+                            <th scope="col" style=" font-size: 18px;">Quantity</th>
+                            <th scope="col" style="font-size: 18px;">Price</th>
+                            <th scope="col" style=" font-size: 18px;">Subtotal</th>
+                            <th scope="col" style="padding: 10px; font-size: 18px;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="text-align: center;">
+                            <td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Enter the product name" style="width: 100%; padding: 8px;"></td>
+                            <td><input type="number" class="form-control form-control-lg form-control-solid" placeholder="Quantity" value="Quantity" style="width: 100%; padding: 8px; border-radius: 4px;"></td>
+                            <td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Price" style="width: 100%; padding: 8px;"></td>
+                            <td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Subtotal" style="width: 100%; padding: 8px;"></td>
+                            <td><button class="btn btn-danger" style="padding: 6px 12px; border-radius: 4px; background-color: #e74c3c; color: #fff; border: none;">Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="#">Select product or service</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        table input {
+            width: 100%;
+            padding: 6px;
+        }
+        table button {
+            padding: 4px 8px;
+        }
+        th, td {
+            font-size: 14px;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+<div class="row">
+	<div class="col-md-6">
+
+<div id="kt_account_settings_profile_details" class="collapse show">
+	<!--begin::Form-->
+	<form id="kt_account_profile_details_form" class="form">
+		<!--begin::Card body-->
+		<div class="card-body border-top p-9">
+			<!--begin::Input group-->
+			
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label fw-semibold fs-6">Notes
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Notes" value="" />
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+			
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label fw-semibold fs-6">Terms
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Terms and Conditions if any" value="" />
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+			
+
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label required fw-semibold fs-6">Date
+				</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8 fv-row">
+					<input type="date" name="company" class="form-control form-control-lg form-control-solid" placeholder="Date" value="" />
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+
+
+			
+		</div>
+</form>
+</div>
+	</div>
+
+
+
+<div class="col-md-6">
+<div id="kt_account_settings_profile_details" class="collapse show">
+	<!--begin::Form-->
+	<form id="kt_account_profile_details_form" class="form">
+		<!--begin::Card body-->
+		<div class="card-body border-top p-9">
+			
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label fw-semibold fs-6">Sub Total</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8">
+					<!--begin::Row-->
+					<div class="row">
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+							<label class="col-form-label fw-semibold fs-6" style="padding: 20px;"><b>3600.00</b></label>
+
+						</div>
+						<!--end::Col-->
+					</div>
+					<!--end::Row-->
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label fw-semibold fs-6">Discount</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8">
+					<!--begin::Row-->
+					<div class="row">
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+							<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="%" />
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+							<label class=" col-form-label fw-semibold fs-6" style="padding: 20px;"><b>0.0</b></label>
+						</div>
+						<!--end::Col-->
+					</div>
+					<!--end::Row-->
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label fw-semibold fs-6">Tax</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8">
+					<!--begin::Row-->
+					<div class="row">
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+							<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="%" />
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+							<label class="col-form-label fw-semibold fs-6" style="padding: 20px;"><b>0.0</b></label>
+						</div>
+						<!--end::Col-->
+					</div>
+					<!--end::Row-->
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label fw-semibold fs-6">Total</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8">
+					<!--begin::Row-->
+					<div class="row">
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+							<label class="col-form-label fw-semibold fs-6" style="padding: 20px;"><b>3600.00</b></label>
+						</div>
+						<!--end::Col-->
+					</div>
+					<!--end::Row-->
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label fw-semibold fs-6">Amount Paid</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8">
+					<!--begin::Row-->
+					<div class="row">
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+							<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="0.0" />
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+						</div>
+						<!--end::Col-->
+					</div>
+					<!--end::Row-->
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+
+
+			<!--begin::Input group-->
+			<div class="row mb-6">
+				<!--begin::Label-->
+				<label class="col-lg-4 col-form-label fw-semibold fs-6">Balance Amount</label>
+				<!--end::Label-->
+				<!--begin::Col-->
+				<div class="col-lg-8">
+					<!--begin::Row-->
+					<div class="row">
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+							<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="3600.00" />
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-lg-6 fv-row">
+						</div>
+						<!--end::Col-->
+					</div>
+					<!--end::Row-->
+				</div>
+				<!--end::Col-->
+			</div>
+			<!--end::Input group-->
+
+
+			
+		</div>
+
+</form>
+</div>
+
+
+		<div class="col-xl-6 mb-5 mb-xl-10">
+			<div class="card card-flush h-xl-100">
+				<div style="text-align: center; margin-top: 20px;">
+					<button type="button" style="background-color: orange; color: #000; padding: 10px 70px; border: none; border-radius: 5px;" class="btn" onclick="window.location.href='pages/new_preview.html';">Preview Invoice</button>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+			
+			<!--end::Nav-->
+			
+</div>
+<!--end::Content container-->
+</div>
+<!--end::Content-->
+</div>
+<!--end::Content wrapper-->
+<!--begin::Footer-->
+<div id="kt_app_footer" class="app-footer align-items-center justify-content-center justify-content-md-between flex-column flex-md-row py-3">
+<!--begin::Copyright-->
+<div class="text-dark order-2 order-md-1">
+	<span class="text-muted fw-semibold me-1">2024&copy;</span>
+	<a href="#" target="_blank" class="text-gray-800 text-hover-primary">Cognetz</a>
+</div>
+<!--end::Copyright-->
+<!--begin::Menu-->
+<ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
+	
+	<li class="menu-item">
+		<a href="#" target="_blank" class="menu-link px-2">Support</a>
+	</li>
+	
+</ul>
+<!--end::Menu-->
+</div>
+<!--end::Footer-->
+</div>
+<!--end:::Main-->
+<!--begin::aside-->
+<div id="kt_app_aside" class="app-aside flex-column" data-kt-drawer="true" data-kt-drawer-name="app-aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="auto" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_app_aside_mobile_toggle">
+<!--begin::Wrapper-->
+<div id="kt_app_aside_wrapper" class="d-flex flex-column align-items-center hover-scroll-y py-5 py-lg-0 gap-4" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_header" data-kt-scroll-wrappers="#kt_app_aside_wrapper" data-kt-scroll-offset="5px">
+<!-- <a href="#" class="btn btn-icon btn-color-primary bg-hover-body h-45px w-45px flex-shrink-0 mb-4" data-bs-toggle="tooltip" title="Calendar" data-bs-custom-class="tooltip-inverse">
+	<i class="ki-duotone ki-calendar-add fs-2qx">
+		<span class="path1"></span>
+		<span class="path2"></span>
+		<span class="path3"></span>
+		<span class="path4"></span>
+		<span class="path5"></span>
+		<span class="path6"></span>
+	</i>
+</a> -->
+
+</div>
+<!--end::Wrapper-->
+</div>
+<!--end::aside-->
+</div>
 				<!--end::Wrapper-->
 			</div>
 			<!--end::Page-->

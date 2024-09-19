@@ -1614,7 +1614,7 @@
 										</div>
 										<!--end::Page title-->
 										<!--begin::Actions-->
-										<h5  class="fw-semibold fs-6" style="position: relative; right: -500px; top: -30px;">Invoice Number</h5><br>
+										<h5  class="fw-semibold  mb-3 mb-lg-0" style="position: relative; right: -48%; top: -22%; max-width: 20%;">Invoice Number</h5><br>
 										<input type="text" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" style="width: 20%;" placeholder="#00228383" value="#00228383">
 										<!--end::Actions-->
 									</div>
@@ -1652,6 +1652,8 @@
 
 
 										<!--begin::Content-->
+										<div class="row">
+											<div class="col-md-6">
 										<div id="kt_account_settings_profile_details" class="collapse show">
 											<!--begin::Form-->
 											<form id="kt_account_profile_details_form" class="form">
@@ -1843,12 +1845,15 @@
 										
 													
 													<!--end::Nav-->
+												</form>
 													
 								</div>
 								<!--end::Content container-->
 							</div>
+							</div>
 							<!--end::Content-->
 							<!--begin::Content-->
+							<div class="col-md-6">
 							<div id="kt_account_settings_profile_details" class="collapse show">
 								<!--begin::Form-->
 								<form id="kt_account_profile_details_form" class="form">
@@ -2023,39 +2028,7 @@
 										<!--end::Input group-->
 									</div>
 
-
-
-
-
-
-
-
-
-							<div style="margin: 20px auto; width: 90%;border-radius: 8px; padding: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-								<table class="table" style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; color: #333;">
-									<thead>
-										<tr style="background-color: #2c3e50; color: #fff; text-align: center;">
-											<th scope="col" style="padding: 12px; font-size: 18px;">Services</th>
-											<th scope="col" style="padding: 12px; font-size: 18px;">Quantity</th>
-											<th scope="col" style="padding: 12px; font-size: 18px;">Price</th>
-											<th scope="col" style="padding: 12px; font-size: 18px;">Subtotal</th>
-											<th scope="col" style="padding: 12px; font-size: 18px;">Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr style="text-align: center;">
-											<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Enter the product name" style="width: 127%; padding: 8px;">
-											</td>
-											
-											<td><input type="number" class="form-control form-control-lg form-control-solid" placeholder="Quantity" value="Quantity" style="width: 77%; padding: 8px;  	border-radius: 4px; position: relative; left: 40px;"></td>
-											<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Price" style="width: 80%; padding: 8px; position: relative; left: 40px;"></td>
-											<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Subtotal" style="width: 80%; padding: 8px; position: relative; left: 35px;"></td>
-											<td><button class="btn btn-danger" style="padding: 6px 12px; border-radius: 4px; background-color: #e74c3c; color: #fff; border: none;">Remove</button></td>
-										</tr>
-										
-									</tbody>
-								</table>
-								<a href="#">Select product or service</a>
+								</div>
 							</div>
 
 
@@ -2063,7 +2036,59 @@
 
 
 
+							<div class="row">
+								<div class="col-12">
+									<div style="margin: 20px auto; width: 90%; border-radius: 8px; padding: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+										<div class="table-responsive">
+											<table class="table" style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; color: #333;">
+												<thead>
+													<tr style="background-color: #2c3e50; color: #fff;">
+														<th scope="col" style="padding: 10px; font-size: 18px;">Services</th>
+														<th scope="col" style=" font-size: 18px;">Quantity</th>
+														<th scope="col" style="font-size: 18px;">Price</th>
+														<th scope="col" style=" font-size: 18px;">Subtotal</th>
+														<th scope="col" style="padding: 10px; font-size: 18px;">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr style="text-align: center;">
+														<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Enter the product name" style="width: 100%; padding: 8px;"></td>
+														<td><input type="number" class="form-control form-control-lg form-control-solid" placeholder="Quantity" value="Quantity" style="width: 100%; padding: 8px; border-radius: 4px;"></td>
+														<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Price" style="width: 100%; padding: 8px;"></td>
+														<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Subtotal" style="width: 100%; padding: 8px;"></td>
+														<td><button class="btn btn-danger" style="padding: 6px 12px; border-radius: 4px; background-color: #e74c3c; color: #fff; border: none;">Remove</button></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<a href="#">Select product or service</a>
+									</div>
+								</div>
+							</div>
+							
+							<style>
+								@media (max-width: 768px) {
+									table input {
+										width: 100%;
+										padding: 6px;
+									}
+									table button {
+										padding: 4px 8px;
+									}
+									th, td {
+										font-size: 14px;
+									}
+								}
+							</style>
+							
 
+
+
+
+
+
+							<div class="row">
+								<div class="col-md-6">
 
 							<div id="kt_account_settings_profile_details" class="collapse show">
 								<!--begin::Form-->
@@ -2122,12 +2147,13 @@
 
 										
 									</div>
+</form>
+							</div>
+								</div>
 
 
 
-
-
-
+							<div class="col-md-6">
 							<div id="kt_account_settings_profile_details" class="collapse show">
 								<!--begin::Form-->
 								<form id="kt_account_profile_details_form" class="form">
@@ -2150,7 +2176,7 @@
 													<!--end::Col-->
 													<!--begin::Col-->
 													<div class="col-lg-6 fv-row">
-														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>3600.00</b></label>
+														<label class="col-form-label fw-semibold fs-6" style="padding: 20px;"><b>3600.00</b></label>
 
 													</div>
 													<!--end::Col-->
@@ -2178,7 +2204,7 @@
 													<!--end::Col-->
 													<!--begin::Col-->
 													<div class="col-lg-6 fv-row">
-														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>0.0</b></label>
+														<label class=" col-form-label fw-semibold fs-6" style="padding: 20px;"><b>0.0</b></label>
 													</div>
 													<!--end::Col-->
 												</div>
@@ -2206,7 +2232,7 @@
 													<!--end::Col-->
 													<!--begin::Col-->
 													<div class="col-lg-6 fv-row">
-														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>0.0</b></label>
+														<label class="col-form-label fw-semibold fs-6" style="padding: 20px;"><b>0.0</b></label>
 													</div>
 													<!--end::Col-->
 												</div>
@@ -2233,7 +2259,7 @@
 													<!--end::Col-->
 													<!--begin::Col-->
 													<div class="col-lg-6 fv-row">
-														<label class="col-lg-4 col-form-label fw-semibold fs-6" style="padding: 20px;"><b>3600.00</b></label>
+														<label class="col-form-label fw-semibold fs-6" style="padding: 20px;"><b>3600.00</b></label>
 													</div>
 													<!--end::Col-->
 												</div>
@@ -2301,124 +2327,18 @@
 										
 									</div>
 
-							
-							
-							
-							<div class="col-xl-6 mb-5 mb-xl-10">
-								<div class="card card-flush h-xl-100" style=" position: relative; left: 50%;">
-										<ul class="nav nav-pills nav-pills-custom mb-3" style=" padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-											<h3 class="card-title align-items-start flex-column" style="font-family: Arial, sans-serif; color: #333; width: 100%;">
-												
-												<!-- Trigger Button -->
-												<div style="text-align: center; margin-top: 20px;">
-													<button type="button" style="background-color: orange; color: #000; padding: 10px 70px; border: none; border-radius: 5px;" class="btn" onclick="openInvoicePopup()">Preview Invoice</button>
-												</div>
-												
-												<!-- Popup Structure -->
-												<div id="invoicePopup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; overflow-y: auto;">
-													<div style="background-color: white; width: 60%; margin: 5% auto; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); position: relative;">
-														<!-- Close Button -->
-														<span onclick="closeInvoicePopup()" style="position: absolute; top: 10px; right: 20px; cursor: pointer; font-size: 20px;">&times;</span>
-														
-														<!-- Invoice Header -->
-														<div style="text-align: center; margin-bottom: 20px;">
-															<div class="container" style="max-width: 300px; position: relative; right: -320px; top: 20px; height: 130px;">
-																<h1 style="font-size: 38px; color: #333; padding: 30px;">INVOICE</h1>
-															</div>
-															<img src="assets/media/misc/saul-welcome.png" alt="Company Logo" style="max-width: 200px; margin-bottom: 10px; position: relative; left: -320px; top: -140px;">
-															<p style="position: relative; top: -150px; left: -250px;"><strong>Payment Method:</strong> PayPal, Credit Card</p>
-															<p style=" position: relative; top: -192px; left: 344px;"><strong>Date:</strong> 04-11-2028</p>
-
-															<img src="assets/media/misc/menu-header-bg.jpg" style="position: relative; top: -190px; left: -20px; width: 878px; height: 50px;" alt="">
-														</div>
-												
-														<!-- Invoice Details -->
-														<div style="display: flex; justify-content: space-between; position: relative; top: -190px;">
-															<div>
-																<p><strong>Invoice To</strong></p>
-																<p>King Khan</p>
-																<p>123 street, Las Vegas</p>
-																<p>USA</p>
-																<p>example@example.com</p>
-																<p><strong>Phone Number:</strong> 1234456789</p>
-																<p><strong>Invoice Number:</strong> #INV12345</p>
-																<p><strong>Date:</strong> 10-09-2024</p>
-															</div>
-															<div>
-																<p><strong>Pay To:</strong></p>
-																<p>John Doe</p>
-																<p>1234 Market St, Suite 500</p>
-																<p>San Francisco, CA, USA</p>
-																<p>john@example.com</p>
-																<p><strong>Phone Number:</strong> 1234456789</p>
-															</div>
-														</div>
-												
-														<!-- Table of Services -->
-														<table style="width: 100%; border-collapse: collapse; margin-top: 20px; position: relative; top: -180px;">
-															<thead>
-																<tr style="background-color: #007bff;">
-																	<th style="padding: 10px; border: 1px solid #ddd;">Item</th>
-																	<th style="padding: 10px; border: 1px solid #ddd;">Description</th>
-																	<th style="padding: 10px; border: 1px solid #ddd;">Price</th>
-																	<th style="padding: 10px; border: 1px solid #ddd;">Qty</th>
-																	<th style="padding: 10px; border: 1px solid #ddd;">Total</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td style="padding: 10px; border: 1px solid #ddd;">Web Development</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">Developing a responsive website</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">$500</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">1</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">$500</td>
-																</tr>
-																<tr>
-																	<td style="padding: 10px; border: 1px solid #ddd;">SEO Optimization</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">SEO and content optimization</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">$300</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">1</td>
-																	<td style="padding: 10px; border: 1px solid #ddd;">$300</td>
-																</tr>
-															</tbody>
-														</table>
-												
-														<!-- Payment Summary -->
-														<div style="text-align: right; margin-top: 20px; position: relative; top: -180px;">
-															<p><strong>Subtotal:</strong> $800</p>
-															<p><strong>Tax (5%):</strong> $40</p>
-															<p><strong>Grand Total:</strong> $840</p>
-														</div>
-												
-														<!-- Payment Info -->
-														<div style="margin-top: 30px; position: relative; top: -290px;">
-															<p><strong>Payment Info:</strong></p>
-															<p>Credit Card : 12*********34</p>
-															<div style="background-color: #007bff; width: fit-content; padding: 10px; width: 200px; position: relative; top: -10;">
-															<p>Amount Paid: $840</p>
-														</div>
-														</div>
-												
-														<!-- Footer with Icons -->
-														<div style="text-align: center; margin-top: 30px; position: relative; top: -240px;">
-															<button onclick="window.print()" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; margin-right: 10px;">
-																<i class="fas fa-print"></i> Print
-															</button>
-															<button onclick="downloadInvoice()" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
-																<i class="fas fa-download"></i> Download
-															</button>
-														</div>
-													</div>
-												</div>
-												
-
-
-
-											</h3>
-										</ul>
-									</div>
-								</div>
+							</form>
 							</div>
+							
+							
+									<div class="col-xl-6 mb-5 mb-xl-10">
+										<div class="card card-flush h-xl-100">
+											<div style="text-align: center; margin-top: 20px;">
+												<button type="button" style="background-color: orange; color: #000; padding: 10px 70px; border: none; border-radius: 5px;" class="btn" onclick="window.location.href='pages/new_preview.html';">Preview Invoice</button>
+											</div>
+										</div>
+									</div>
+									
 							
 							
 							
