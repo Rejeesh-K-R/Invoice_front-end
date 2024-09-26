@@ -1653,6 +1653,26 @@
 
 
 
+							<div id="kt_app_content" class="app-content flex-column-fluid">
+								<!--begin::Card toolbar-->
+								<div class="card-toolbar flex-row-fluid justify-content-end gap-5">
+									<div style="max-width: 20%; padding: 10px;">
+										<h5 style="padding: 10px;">Purchase/Sales</h5>
+										<!--begin::Select2-->
+										<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Purchase/Sales" data-kt-ecommerce-product-filter="status">
+											<option></option>
+											<option value="purchase">Purchase</option>
+											<option value="sales">Sales</option>
+										</select>
+										<!--end::Select2-->
+									</div>
+									<!--begin::Add product-->
+								</div>
+								<!--end::Card toolbar-->
+								</div>
+
+
+
 
 <!--Editing start's Here-->
 
@@ -2068,27 +2088,40 @@
     <div class="col-12">
         <div style="margin: 20px auto; width: 90%; border-radius: 8px; padding: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
             <div class="table-responsive">
-                <table class="table" style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; color: #333;">
-                    <thead>
-                        <tr style="background-color: #2c3e50; color: #fff;">
-                            <th scope="col" style="padding: 10px; font-size: 18px;">Services</th>
-                            <th scope="col" style=" font-size: 18px;">Quantity</th>
-                            <th scope="col" style="font-size: 18px;">Price</th>
-                            <th scope="col" style=" font-size: 18px;">Subtotal</th>
-                            <th scope="col" style="padding: 10px; font-size: 18px;">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="text-align: center;">
-                            <td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Enter the product name" style="width: 100%; padding: 8px;"></td>
-                            <td><input type="number" class="form-control form-control-lg form-control-solid" placeholder="Quantity" value="Quantity" style="width: 100%; padding: 8px; border-radius: 4px;"></td>
-                            <td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Price" style="width: 100%; padding: 8px;"></td>
-                            <td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Subtotal" style="width: 100%; padding: 8px;"></td>
-                            <td><button class="btn btn-danger" style="padding: 6px 12px; border-radius: 4px; background-color: #e74c3c; color: #fff; border: none;">Remove</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+				<table class="table" style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; color: #333;">
+					<thead>
+						<tr style="background-color: #2c3e50; color: #fff;">
+							<th scope="col" style="padding: 10px; font-size: 18px;">Services</th>
+							<th scope="col" style=" font-size: 18px;">Quantity</th>
+							<th scope="col" style="font-size: 18px;">Price</th>
+							<th scope="col" style=" font-size: 18px;">Subtotal</th>
+							<th scope="col" style="padding: 10px; font-size: 18px;">Action</th>
+						</tr>
+					</thead>
+					<tbody id="serviceTableBody">
+						<tr style="text-align: center;">
+							<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Enter the product name" style="width: 100%; padding: 8px;"></td>
+							<td><input type="number" class="form-control form-control-lg form-control-solid" placeholder="Quantity" style="width: 100%; padding: 8px;"></td>
+							<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Price" style="width: 100%; padding: 8px;"></td>
+							<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Subtotal" style="width: 100%; padding: 8px;"></td>
+							<td class="text-end">
+
+								<button style="height: 40px; border-radius: 12px;" class="btn btn-light btn-active-light-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+									Actions
+								</button>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item addRow">Add</a></li>
+									<li><a class="dropdown-item removeRow">Delete</a></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			
+			
+			
             <a href="#">Select product or service</a>
         </div>
     </div>
@@ -7526,6 +7559,49 @@
 
 
 
+<!--Actions button: add, remove dropdown: begin-->
+<script>
+	// Function to add a new row
+	// Function to add a new row
+	document.addEventListener('click', function(event) {
+	// Prevent default behavior for 'Add' and 'Delete' links
+	if (event.target.classList.contains('addRow') || event.target.classList.contains('removeRow')) {
+		event.preventDefault(); // Prevents the redirection
+	}
+
+	// Function to add a new row
+	if (event.target.classList.contains('addRow')) {
+		// Create a new row
+		let newRow = `
+			<tr style="text-align: center;">
+				<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Enter the product name" style="width: 100%; padding: 8px;"></td>
+				<td><input type="number" class="form-control form-control-lg form-control-solid" placeholder="Quantity" style="width: 100%; padding: 8px;"></td>
+				<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Price" style="width: 100%; padding: 8px;"></td>
+				<td><input type="text" class="form-control form-control-lg form-control-solid" placeholder="Subtotal" style="width: 100%; padding: 8px;"></td>
+				<td class="text-end">
+					<button style="height: 40px; border-radius: 12px;" class="btn btn-light btn-active-light-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						Actions
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item addRow">Add</a></li>
+						<li><a class="dropdown-item removeRow">Delete</a></li>
+					</ul>
+				</td>
+			</tr>`;
+
+		// Append the new row to the table body
+			document.getElementById('serviceTableBody').insertAdjacentHTML('beforeend', newRow);
+		}
+
+		// Function to remove a row
+		if (event.target.classList.contains('removeRow')) {
+			event.target.closest('tr').remove();
+		}
+	});
+
+
+</script>
+<!--Actions button: add, remove dropdown: end-->
 
 
 	</body>

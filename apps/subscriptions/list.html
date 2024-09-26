@@ -1370,98 +1370,59 @@
 					<!--end::Sidebar-->
 					<!--begin::Main-->
 					<div class="app-main flex-column flex-row-fluid" id="kt_app_main">
-						<!--begin::Content wrapper-->
 						<div class="d-flex flex-column flex-column-fluid">
-							<!--begin::Toolbar-->
 							<div id="kt_app_toolbar" class="app-toolbar pt-5">
-								<!--begin::Toolbar container-->
-								<div id="kt_app_toolbar_container" class="app-container container-fluid d-flex align-items-stretch">
-									<!--begin::Toolbar wrapper-->
-									<div class="app-toolbar-wrapper d-flex flex-stack flex-wraps gap-4 w-100">
-										<!--begin::Page title-->
-										<div class="page-title d-flex flex-column gap-1 me-3 mb-2">
-											
-											<!--begin::Title-->
-											<div class="row">
-												<div class="col-md-12">
-											<h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0" style=" position: relative; top: 25px;">Manage Invoice</h1> <br><br>
-											<!--end::Title-->
+								<div id="kt_app_toolbar_container" class="app-container container-fluid">
+									<div class="row align-items-center">
+										<!-- Manage Invoice: Always First on Mobile -->
+										<div class="col-12 col-md-6 order-1 order-md-1 mb-3 mb-md-0">
+											<h1 class="page-heading text-center text-md-start text-dark fw-bolder fs-2 lh-0" style="position: relative; top: 0;">Manage Invoice</h1>
+										</div>
+					
+										<!-- Earnings, Purchase, Sales: Display Below on Mobile -->
+										<div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center flex-wrap order-2 order-md-2">
+											<!-- Earnings -->
+											<div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-3 mb-3 mb-md-0">
+												<div class="d-flex align-items-center">
+													<i class="ki-duotone ki-arrow-up fs-2 text-success me-2">
+														<span class="path1"></span>
+														<span class="path2"></span>
+													</i>
+													<div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="4500" data-kt-countup-prefix="$">0</div>
 												</div>
-												
-												</div>
+												<div class="fw-semibold fs-6 text-gray-400">Earnings</div>
 											</div>
-											
+					
+											<!-- Purchase -->
+											<div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-3 mb-3 mb-md-0">
+												<div class="d-flex align-items-center">
+													<i class="ki-duotone ki-arrow-up fs-2 text-success me-2">
+														<span class="path1"></span>
+														<span class="path2"></span>
+													</i>
+													<div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="750">0</div>
+												</div>
+												<div class="fw-semibold fs-6 text-gray-400">Purchase</div>
+											</div>
+					
+											<!-- Sales -->
+											<div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-3 mb-3 mb-md-0">
+												<div class="d-flex align-items-center">
+													<i class="ki-duotone ki-arrow-up fs-2 text-success me-2">
+														<span class="path1"></span>
+														<span class="path2"></span>
+													</i>
+													<div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="600">0</div>
+												</div>
+												<div class="fw-semibold fs-6 text-gray-400">Sales</div>
+											</div>
 										</div>
-										<!--end::Page title-->
-										<!--begin::Actions-->
-										<!--end::Actions-->
 									</div>
-									<!--end::Toolbar wrapper-->
 								</div>
-								
-								<!--end::Toolbar container-->
-								
 							</div>
-							<div id="kt_app_content" class="app-content flex-column-fluid">
-								<div id="kt_app_content_container" class="app-container container-fluid">
-
-							<!--end::Toolbar-->
-							<div class="d-flex flex-column flex-grow-1 pe-8">
-								<!--begin::Stats-->
-								<div class="d-flex flex-wrap">
-									<!--begin::Stat-->
-									<div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-4 mb-3">
-										<!--begin::Number-->
-										<div class="d-flex align-items-center">
-											<i class="ki-duotone ki-arrow-up fs-2 text-success me-2">
-												<span class="path1"></span>
-												<span class="path2"></span>
-											</i>
-											<div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="4500" data-kt-countup-prefix="$">0</div>
-										</div>
-										<!--end::Number-->
-										<!--begin::Label-->
-										<div class="fw-semibold fs-6 text-gray-400">Earnings</div>
-										<!--end::Label-->
-									</div>
-									<!--end::Stat-->
-									<!--begin::Stat-->
-									<div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-4 mb-3">
-										<!--begin::Number-->
-										<div class="d-flex align-items-center">
-											<i class="ki-duotone ki-arrow-up fs-2 text-success me-2">
-												<span class="path1"></span>
-												<span class="path2"></span>
-											</i>
-											<div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="750">0</div>
-										</div>
-										<!--end::Number-->
-										<!--begin::Label-->
-										<div class="fw-semibold fs-6 text-gray-400">Purchase</div>
-										<!--end::Label-->
-									</div>
-									<!--end::Stat-->
-									<!--begin::Stat-->
-									<div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-4 mb-3">
-										<!--begin::Number-->
-										<div class="d-flex align-items-center">
-											<i class="ki-duotone ki-arrow-up fs-2 text-success me-2">
-												<span class="path1"></span>
-												<span class="path2"></span>
-											</i>
-											<div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="600">0</div>
-										</div>
-										<!--end::Number-->
-										<!--begin::Label-->
-										<div class="fw-semibold fs-6 text-gray-400">Sales</div>
-										<!--end::Label-->
-									</div>
-									<!--end::Stat-->
-								</div>
-								<!--end::Stats-->
-							</div>
-							</div>
-							</div>
+						</div>
+					</div>
+					
 							<!--begin::Content-->
 							<div id="kt_app_content" class="app-content flex-column-fluid">
 								<!--begin::Content container-->
@@ -1607,10 +1568,11 @@
 														</th>
 														<th class="min-w-125px">Invoice</th>
 														<th class="min-w-125px">Name</th>
-														<th class="min-w-125px">Status</th>
+														
 														<th class="min-w-125px">Amount</th>
 														<th class="min-w-125px">Product</th>
 														<th class="min-w-125px">Date</th>
+														<th class="min-w-125px">Status</th>
 														<th class="text-end min-w-70px">Actions</th>
 													</tr>
 												</thead>
@@ -1627,15 +1589,16 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Emma Smith</a>
 														</td>
-														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
+														
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">$840</a>
 														</td>
 														
 														<td>Basic</td>
 														<td>Apr 15, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -1674,14 +1637,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Melody Macy</a>
 														</td>
-														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 														</td>
 														<td>Basic</td>
 														<td>Mar 10, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -1718,14 +1682,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Max Smith</a>
 														</td>
-														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$320</div>
 														</td>
 														<td>Teams Bundle</td>
 														<td>Feb 21, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -1762,14 +1727,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Sean Bean</a>
 														</td>
-														<td>
-															<div class="badge badge-light-danger">Pending</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$780</div>
 														</td>
 														<td>Enterprise</td>
 														<td>Feb 21, 2023</td>
+														<td>
+															<div class="badge badge-light-danger">Pending</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -1806,14 +1772,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Brian Cox</a>
 														</td>
-														<td>
-															<div class="badge badge-light-danger">Pending</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 														</td>
 														<td>Basic</td>
 														<td>Nov 10, 2023</td>
+														<td>
+															<div class="badge badge-light-danger">Pending</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -1850,14 +1817,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Mikaela Collins</a>
 														</td>
-														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 														</td>
 														<td>Enterprise Bundle</td>
 														<td>Nov 10, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -1894,14 +1862,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Francis Mitcham</a>
 														</td>
-														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 														</td>
 														<td>Teams</td>
 														<td>Feb 21, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -1938,14 +1907,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Olivia Wild</a>
 														</td>
-														<td>
-															<div class="badge badge-light-danger">Pending</div>
-														</td>
+														
 														<td>
 														<div class="text-gray-800 text-hover-primary mb-1">$420</div>
 														</td>
 														<td>Enterprise</td>
 														<td>Sep 22, 2023</td>
+														<td>
+															<div class="badge badge-light-danger">Pending</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -1982,14 +1952,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Neil Owen</a>
 														</td>
-														<td>
-															<div class="badge badge-light-danger">Pending</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 														</td>
 														<td>Basic</td>
 														<td>Nov 10, 2023</td>
+														<td>
+															<div class="badge badge-light-danger">Pending</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2026,14 +1997,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Dan Wilson</a>
 														</td>
-														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 														</td>
 														<td>Enterprise Bundle</td>
 														<td>Jun 24, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2070,15 +2042,16 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Emma Bold</a>
 														</td>
-														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 														</td>
 														
 														<td>Enterprise</td>
 														<td>Apr 15, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2115,14 +2088,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Ana Crown</a>
 														</td>
-														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 														</td>
 														<td>Basic</td>
 														<td>Dec 20, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2159,14 +2133,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Robert Doe</a>
 														</td>
-														<td>
-															<div class="badge badge-light-danger">Pending</div>
-														</td>
+														
 														<td>
 														<div class="text-gray-800 text-hover-primary mb-1">$420</div>
 														</td>
 														<td>Teams Bundle</td>
 														<td>Oct 25, 2023</td>
+														<td>
+															<div class="badge badge-light-danger">Pending</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2203,14 +2178,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">John Miller</a>
 														</td>
-														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$780</div>
 														</td>
 														<td>Enterprise</td>
 														<td>Mar 10, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2247,14 +2223,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Lucy Kunic</a>
 														</td>
-														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
+														
 														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 														</td>
 														<td>Basic</td>
 														<td>Aug 19, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2291,14 +2268,15 @@
 														<td>
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Neil Owen</a>
 														</td>
-														<td>
-															<div class="badge badge-light-danger">Pending</div>
-														</td>
+														
 														<td>
 														<div class="text-gray-800 text-hover-primary mb-1">$420</div>
 														</td>
 														<td>Basic Bundle</td>
 														<td>Jun 20, 2023</td>
+														<td>
+															<div class="badge badge-light-danger">Pending</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2336,14 +2314,14 @@
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Dan Wilson</a>
 														</td>
 														<td>
-															<div class="badge badge-light-danger">Pending</div>
-														</td>
-														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$780</div>
 														</td>
 														
 														<td>Enterprise</td>
 														<td>Jun 20, 2023</td>
+														<td>
+															<div class="badge badge-light-danger">Pending</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2381,15 +2359,15 @@
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Emma Smith</a>
 														</td>
 														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
-														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 															
 														</td>
 														
 														<td>Teams</td>
 														<td>Apr 15, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2427,13 +2405,13 @@
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Melody Macy</a>
 														</td>
 														<td>
-															<div class="badge badge-light-success">Paid</div>
-														</td>
-														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$870</div>
 														</td>
 														<td>Basic</td>
 														<td>Aug 19, 2023</td>
+														<td>
+															<div class="badge badge-light-success">Paid</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
@@ -2471,14 +2449,14 @@
 															<a href="#" class="text-gray-800 text-hover-primary mb-1">Max Smith</a>
 														</td>
 														<td>
-															<div class="badge badge-light-danger">Pending</div>
-														</td>
-														<td>
 															<div class="text-gray-800 text-hover-primary mb-1">$420</div>
 														</td>
 
 														<td>Basic Bundle</td>
 														<td>Mar 10, 2023</td>
+														<td>
+															<div class="badge badge-light-danger">Pending</div>
+														</td>
 														<td class="text-end">
 															<a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 															<i class="ki-duotone ki-down fs-5 m-0"></i></a>
